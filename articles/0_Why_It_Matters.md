@@ -91,7 +91,7 @@ For online privacy to be effective, it needs to be adopted my the masses, and no
 *I owe a lot of thanks others who've conducted research, written papers, developed software all in the interest of privacy and security. Full attributions and references found in [`ATTRIBUTIONS.md`](/ATTRIBUTIONS.md).*
 
 
-*Licensed under [Creative Commons, CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), © [Alicia Sykes](https://aliciasykes.com) 2024*
+*Licensed under [Creative Commons, CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), © [o0om](https://github.com/o0om) 2024*
 
 [![Attribution 4.0 International](https://licensebuttons.net/l/by/3.0/88x31.png)](https://github.com/o0om/lunar-security-checklist/blob/master/LICENSE.md)
 

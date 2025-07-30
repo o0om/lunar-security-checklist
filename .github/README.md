@@ -4,7 +4,7 @@
 <b><i>The ultimate list of tips to secure your digital life</i></b>
 <br />
 <br />
-<a href="https://personal-security-checklist.as93.net"><img src="https://i.ibb.co/Rb6P6h6/shield.png" width="64" /><br /></a>
+<a href="https://github.com/o0om/lunar-security-checklist"><img src="https://i.ibb.co/Rb6P6h6/shield.png" width="64" /><br /></a>
 <br />
 <kbd><br />👉 <a href="https://github.com/o0om/lunar-security-checklist/blob/HEAD/CHECKLIST.md"><b>Read the Checklist</b></a> 👈<br /><br /></kbd>
 <br />
@@ -92,10 +92,6 @@ Before submitting an issue or PR, please ensure you've followed the [community g
 
 ## Credits
 
-### Sponsors
-
-![sponsors badge](https://readme-contribs.as93.net/sponsors/lissy93?avatarSize=80&perRow=10)
-
 If you've found this repository helpful, consider sponsoring me on GitHub if you're able 💜
 
 
@@ -104,7 +100,7 @@ If you've found this repository helpful, consider sponsoring me on GitHub if you
 
 ## License
 
-> _**[o0om/Lunar-Security-Checklist](https://github.com/o0om/lunar-security-checklist)** is licensed under [MIT](https://github.com/o0om/lunar-security-checklist/blob/HEAD/LICENSE) © [Alicia Sykes](https://aliciasykes.com) 2024._<br>
+> _**[o0om/Lunar-Security-Checklist](https://github.com/o0om/lunar-security-checklist)** is licensed under [MIT](https://github.com/o0om/lunar-security-checklist/blob/HEAD/LICENSE) © [o0om](https://github.com/o0om) 2024._<br>
 > <sup align="right">For information, see <a href="https://tldrlegal.com/license/mit-license">TLDR Legal > MIT</a></sup>
 
 <details>
@@ -112,7 +108,7 @@ If you've found this repository helpful, consider sponsoring me on GitHub if you
 
 ```
 The MIT License (MIT)
-Copyright (c) Alicia Sykes <alicia@omg.com> 
+Copyright (c) o0om <o0om@github.com> 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to deal 
@@ -139,7 +135,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <!-- License + Copyright -->
 <p  align="center">
-  <i>© <a href="https://aliciasykes.com">Alicia Sykes</a> 2024</i><br>
+  <i>© <a href="https://github.com/o0om">o0om</a> 2024</i><br>
   <i>Licensed under <a href="https://gist.github.com/o0om/143d2ee01ccc5c052a17">MIT</a></i><br>
   <a href="https://github.com/o0om"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
   <sup>Thanks for visiting :)</sup>
