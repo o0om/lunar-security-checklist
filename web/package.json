@@ -1,5 +1,23 @@
 {
+  "name": "lunar-security-checklist",
+  "version": "1.0.0",
+  "description": "🌙 Lunar Security Checklist - A comprehensive personal security checklist with beautiful Luna-themed interface",
+  "author": "Lunar Security Team",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/o0om/lunar-security-checklist.git"
+  },
+  "keywords": [
+    "security",
+    "checklist",
+    "privacy",
+    "luna",
+    "personal-security",
+    "cybersecurity",
+    "qwik",
+    "typescript"
+  ],
   "scripts": {
     "build": "qwik build",
     "build.client": "vite build",
