@@ -1,6 +1,6 @@
 # 🌙 Lunar Security Checklist
 
-A comprehensive personal security checklist with a beautiful Luna-themed interface, helping you secure your digital life and protect your privacy.
+A beautiful, comprehensive personal security checklist with a stunning Luna-themed interface. Secure your digital life and protect your privacy with our modern, intuitive checklist.
 
 ## ✨ Features
 
@@ -61,9 +61,8 @@ npm run build.static
 npm run preview
 ```
 
-## 🎨 Customization
+## 🎨 Tech Stack
 
-The project uses:
 - **Qwik** - Modern web framework
 - **Tailwind CSS** - Utility-first CSS framework
 - **DaisyUI** - Component library
@@ -71,17 +70,11 @@ The project uses:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 🌟 Acknowledgments
-
-- Original security checklist concept
-- Modern web development community
-- Open source contributors
 
 ---
 

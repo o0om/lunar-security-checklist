@@ -64,7 +64,7 @@ export default component$(() => {
               </details>
             </li>
             <li>
-              <a href="https://github.com/lissy93/personal-security-checklist"
+              <a href="https://github.com/o0om/lunar-security-checklist"
                 class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
                 <Icon icon="github" width={16} height={16}  />GitHub
               </a>
@@ -102,7 +102,7 @@ export default component$(() => {
             🌙 Lunar Security
           </h2>
           <li><a href="/"><Icon class="mr-2" icon="homepage" width={16} height={16}  />Home</a></li>
-          <li><a href="https://github.com/lissy93/personal-security-checklist">
+          <li><a href="https://github.com/o0om/lunar-security-checklist">
             <Icon class="mr-2" icon="github" width={16} height={16}  />GitHub</a>
           </li>
           <li>
@@ -136,29 +136,11 @@ export default component$(() => {
             </a>
             <ul>
               <li>
-                <a href="https://github.com/Lissy93/personal-security-checklist/?tab=readme-ov-file#contributing">Contributing</a>
+                <a href="https://github.com/o0om/lunar-security-checklist/?tab=readme-ov-file#contributing">Contributing</a>
               </li>
               <li>
-                <a href="https://github.com/Lissy93/personal-security-checklist/blob/master/LICENSE">License</a>
+                <a href="https://github.com/o0om/lunar-security-checklist/blob/main/LICENSE">License</a>
               </li>
-            </ul>
-            <ul>
-            <li>
-              <a href="/about#author">Author</a>
-              <ul>
-                <li><a href="https://aliciasykes.com/contact">Contact</a></li>
-                <li>
-                  <a href="https://apps.aliciasykes.com">More Apps</a>
-                </li>
-                <li class="flex flex-row">
-                  <a href="https://github.com/lissy93"><Icon icon="hub" width={16} height={16} /></a>
-                  <a href="https://x.com/lissy_sykes"><Icon icon="twitter" width={16} height={16} /></a>
-                  <a href="https://mastodon.social/@lissy93"><Icon icon="mastodon" width={16} height={16} /></a>
-                  <a href="https://dev.to/lissy93"><Icon icon="dev" width={16} height={16} /></a>
-                  <a href="https://linkedin.com/in/aliciasykes"><Icon icon="linkedin" width={16} height={16} /></a>
-                </li>
-              </ul>
-            </li>
             </ul>
           </li>
         </ul>
