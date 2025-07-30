@@ -96,18 +96,6 @@ Before submitting an issue or PR, please ensure you've followed the [community g
 
 ![sponsors badge](https://readme-contribs.as93.net/sponsors/lissy93?avatarSize=80&perRow=10)
 
-### Stargzers
-
-![stargazers badge](https://readme-contribs.as93.net/stargazers/lissy93/personal-security-checklist?perRow=16&limit=64)
-
-
-## Credits
-
-Thank you to all who have contributed to, or sponsored this project!
-
-### Sponsors
-
-
 If you've found this repository helpful, consider sponsoring me on GitHub if you're able 💜
 
 

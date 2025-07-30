@@ -21,19 +21,10 @@ const articles: Article[] = [
     markdown: 'https://raw.githubusercontent.com/o0om/lunar-security-checklist/main/articles/2_TLDR_Short_List.md',
   },
   {
-    title: 'Helpful Links',
-    description: 'Directory of links to additional tools, resources and information.',
-    slug: 'helpful-links',
-    markdown: 'https://raw.githubusercontent.com/o0om/lunar-security-checklist/main/articles/4_Privacy_And_Security_Links.md',
-    warningMessage: 'This article was written in 2020, and needs updating.',
-  },
-  {
-    title: 'Security Gadgets',
-    description: 'Handy hardware devices that can help protect your privacy and security.',
-    slug: 'privacy-gadgets',
-    markdown: 'https://raw.githubusercontent.com/o0om/lunar-security-checklist/main/articles/6_Privacy_and-Security_Gadgets.md',
-    warningMessage: 'This article is outdated and may contain incorrect information. '
-      +'It is recommended to verify the information before using any of the products listed.',
+    title: 'Secure Messaging',
+    description: 'Guide to secure messaging and communication.',
+    slug: 'secure-messaging',
+    markdown: 'https://raw.githubusercontent.com/o0om/lunar-security-checklist/main/articles/Secure-Messaging.md',
   },
 ];
 
