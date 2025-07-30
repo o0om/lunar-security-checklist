@@ -1,4 +1,4 @@
-# Personal Cyber Security | TLDR [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![License](https://img.shields.io/badge/LICENSE-CC_BY_4.0-00a2ff?&style=flat-square)](https://creativecommons.org/licenses/by/4.0/)[![Contributors](https://img.shields.io/github/contributors/lissy93/personal-security-checklist?color=%23ffa900&style=flat-square)](/ATTRIBUTIONS.md#contributors-)
+# Personal Cyber Security | TLDR [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![License](https://img.shields.io/badge/LICENSE-CC_BY_4.0-00a2ff?&style=flat-square)](https://creativecommons.org/licenses/by/4.0/)[![Contributors](https://img.shields.io/github/contributors/o0om/lunar-security-checklist?color=%23ffa900&style=flat-square)](/ATTRIBUTIONS.md#contributors-)
 
 #### Contents
 - [Personal Security Checklist](#personal-security-checklist)
@@ -7,12 +7,12 @@
 
 ## PERSONAL SECURITY CHECKLIST
 
-> This checklist of privacy and security tips, is a summarized version of [The Complete Personal Security Checklist](https://github.com/Lissy93/personal-security-checklist/blob/master/README.md). It lays out the most essential steps you should take to protect your digital life.
+> This checklist of privacy and security tips, is a summarized version of [The Complete Lunar Security Checklist](https://github.com/o0om/lunar-security-checklist/blob/master/README.md). It lays out the most essential steps you should take to protect your digital life.
 
 ### Authentication
 - Use a long, strong and unique password for each of your accounts (see [HowSecureIsMyPassword.net](https://howsecureismypassword.net))
-- Use a secure [password manager](https://github.com/Lissy93/awesome-privacy#password-managers), to encrypt, store and fill credentials, such as [BitWarden](https://bitwarden.com) or [KeePass](https://keepass.info) / [KeePassXC](https://keepassxc.org)
-- Enable 2-Factor authentication where available, and use an [authenticator app](https://github.com/Lissy93/awesome-privacy#2-factor-authentication) or [hardware token](/6_Privacy_and-Security_Gadgets.md#fido-u2f-keys)
+- Use a secure password manager to encrypt, store and fill credentials, such as [BitWarden](https://bitwarden.com) or [KeePass](https://keepass.info) / [KeePassXC](https://keepassxc.org)
+- Enable 2-Factor authentication where available, and use an authenticator app or [hardware token](/6_Privacy_and-Security_Gadgets.md#fido-u2f-keys)
 - When you enable multi-factor authentication, you will usually be given several codes that you can use if your 2FA method is lost, broken or unavailable. You should store these on paper or in a safe place on disk (e.g. in offline storage or as in an encrypted file/drive).
 - Sign up for breach alerts (with [Firefox Monitor](https://monitor.firefox.com) or [HaveIBeenPwned](https://haveibeenpwned.com)), and update passwords of compromised accounts
 
@@ -23,9 +23,9 @@
 - Block invasive 3rd-party trackers and ads using an extension like [Privacy Badger](https://privacybadger.org) or [uBlock](https://github.com/gorhill/uBlock)
 - Keep your browser up-to-date, explore the privacy settings and remove unnecessary add-ons/ extensions
 - Consider using compartmentalization to separate different areas of your browsing (such as work, social, shopping etc), in order to reduce tracking. This can be done with [Firefox Containers](https://support.mozilla.org/en-US/kb/containers), or by using separate browsers or browser profiles
-- Don't allow your browser to save your passwords or auto-fill personal details (instead use a [password manager](https://github.com/Lissy93/awesome-privacy#password-managers), and [disable your browsers own auto-fill](https://www.computerhope.com/issues/ch001377.htm))
+- Don't allow your browser to save your passwords or auto-fill personal details (instead use a password manager, and [disable your browsers own auto-fill](https://www.computerhope.com/issues/ch001377.htm))
 - Clear your cookies, session data and cache regularly. An extension such as [Cookie-Auto-Delete](https://github.com/Cookie-AutoDelete/Cookie-AutoDelete) can be used to automate this
-- Don't sign into your browser, as it can link further data to your identity. If you need to, you can use an open source [bookmark sync](https://github.com/Lissy93/awesome-privacy#browser-sync) app
+- Don't sign into your browser, as it can link further data to your identity. If you need to, you can use an open source bookmark sync app
 - Consider using [Decentraleyes](https://decentraleyes.org) to decrease the number of trackable CDN requests your device makes
 - Test your browser using a tool like [Panopticlick](https://panopticlick.eff.org) to ensure there are no major issues. [BrowserLeaks](https://browserleaks.com) and [Am I Unique](https://amiunique.org/fp) are also useful for exploring what device info you are exposing to websites
 - For anonymous browsing use [The Tor Browser](https://www.torproject.org/), and avoid logging into any of your personal accounts
@@ -53,23 +53,23 @@ It's important to protect your email account, as if a hacker gains access to it 
 
 
 ### Secure Messaging
-- Use a [secure messaging app](https://github.com/Lissy93/awesome-privacy#encrypted-messaging) that is both fully open source and end-to-end encrypted with perfect forward secrecy (e.g. [Signal](https://www.signal.org/))
+- Use a secure messaging app that is both fully open source and end-to-end encrypted with perfect forward secrecy (e.g. [Signal](https://www.signal.org/))
 - Ensure that both your device, and that of your recipient(s) is secure (free from malware, encrypted and has a strong password)
 - Disable cloud services, such as web app companion or cloud backup feature, both of which increases attack surface
 - Strip meta data from media before sharing, as this can lead to unintentionally revealing more data than you intended
 - Verify your recipient is who they claim to be, either physically or cryptographically by using an app that offers contact verification
 - Avoid SMS, but if you must use it then encrypt your messages, e.g. using the [Silence](https://silence.im/) app
 - Opt for a stable and actively maintained messaging platform, that is backed by reputable developers and have a transparent revenue model or are able to account for where funding has originated from. It should ideally be based in a friendly jurisdiction and have undergone an independent security audit. 
-- In some situations, it may be appropriate to use an app that supports disappearing messages, and/ or allows for anonymous sign up (without any PII: phone number, email address etc). A [decentralized platform](https://github.com/Lissy93/awesome-privacy#p2p-messaging) can offer additional security and privacy benefits in some circumstances, as there is no single entity governing it, e.g. [Matrix](https://matrix.org/), [Session](https://getsession.org/), [Tox](https://tox.chat/) or [Briar](https://briarproject.org/)
+- In some situations, it may be appropriate to use an app that supports disappearing messages, and/ or allows for anonymous sign up (without any PII: phone number, email address etc). A decentralized platform can offer additional security and privacy benefits in some circumstances, as there is no single entity governing it, e.g. [Matrix](https://matrix.org/), [Session](https://getsession.org/), [Tox](https://tox.chat/) or [Briar](https://briarproject.org/)
 
 
 ### Networking
 - Use a reputable VPN to keep your IP protected and reduce the amount of browsing data your ISP can log, but understand their [limitations](5_Privacy_Respecting_Software.md#word-of-warning-4).  Good options include [ProtonVPN](https://protonvpn.com) and [Mullvad](https://mullvad.net), see [thatoneprivacysite.net](https://thatoneprivacysite.net/) for detailed comparisons
 - Change your routers default password. Anyone connected to your WiFi is able to listen to network traffic, so in order to prevent people you don't know from connecting, use WPA2 and set a strong password.
-- Use a [secure DNS](https://github.com/Lissy93/awesome-privacy#dns) provider, (such as [Cloudflare's 1.1.1.1](https://1.1.1.1/dns/)) to reduce tracking. Ideally configure this on your router, but if that's not possible, then it can be done on each device. 
+- Use a secure DNS provider, (such as [Cloudflare's 1.1.1.1](https://1.1.1.1/dns/)) to reduce tracking. Ideally configure this on your router, but if that's not possible, then it can be done on each device. 
 
 
-**📜 See More**: [The Complete Personal Security Checklist](https://github.com/Lissy93/personal-security-checklist/blob/master/README.md)
+**📜 See More**: [The Complete Lunar Security Checklist](https://github.com/o0om/lunar-security-checklist/blob/master/README.md)
 
 ----
 
@@ -123,7 +123,7 @@ Switch to alternative open-source, privacy-respecting apps and services, which w
 - Blogging: [Write Freely].
 - Calendar/ Contacts Sync: [ETE Sync]
 
-📜 **See More**: [Complete List of Privacy-Respecting Sofware](https://github.com/Lissy93/awesome-privacy)
+📜 **See More**: [Complete List of Privacy-Respecting Software](https://github.com/o0om/lunar-security-checklist/blob/master/README.md)
 
 ----
 
@@ -146,26 +146,26 @@ There's no need to spend money - Most of these products can be made at home with
 
 ----
 
-*Thanks for visiting, hope you found something useful here :) Contributions are welcome, and much appreciated - to propose an edit [raise an issue](https://github.com/Lissy93/personal-security-checklist/issues/new/choose), or [open a PR](https://github.com/Lissy93/personal-security-checklist/pull/new/master). See: [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md).*
+*Thanks for visiting, hope you found something useful here :) Contributions are welcome, and much appreciated - to propose an edit [raise an issue](https://github.com/o0om/lunar-security-checklist/issues/new/choose), or [open a PR](https://github.com/o0om/lunar-security-checklist/pull/new/master). See: [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md).*
 
 ----
 
 Found this helpful? Consider sharing, to help others improve their digital security 😇
 
-[![Share on Twitter](https://img.shields.io/badge/Share-Twitter-17a2f3?style=flat-square&logo=Twitter)](http://twitter.com/share?text=Check%20out%20the%20Personal%20Cyber%20Security%20Checklist-%20an%20ultimate%20list%20of%20tips%20for%20protecting%20your%20digital%20security%20and%20privacy%20in%202020%2C%20with%20%40Lissy_Sykes%20%F0%9F%94%90%20%20%F0%9F%9A%80&url=https://github.com/Lissy93/personal-security-checklist)
+[![Share on Twitter](https://img.shields.io/badge/Share-Twitter-17a2f3?style=flat-square&logo=Twitter)](http://twitter.com/share?text=Check%20out%20the%20Lunar%20Security%20Checklist-%20an%20ultimate%20list%20of%20tips%20for%20protecting%20your%20digital%20security%20and%20privacy%20in%202024%2C%20%F0%9F%94%90%20%20%F0%9F%9A%80&url=https://github.com/o0om/lunar-security-checklist)
 [![Share on LinkedIn](https://img.shields.io/badge/Share-LinkedIn-0077b5?style=flat-square&logo=LinkedIn)](
-http://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Lissy93/personal-security-checklist&title=The%20Ultimate%20Personal%20Cyber%20Security%20Checklist&summary=%F0%9F%94%92%20A%20curated%20list%20of%20100%2B%20tips%20for%20protecting%20digital%20security%20and%20privacy%20in%202020&source=https://github.com/Lissy93)
-[![Share on Facebook](https://img.shields.io/badge/Share-Facebook-4267b2?style=flat-square&logo=Facebook)](https://www.linkedin.com/shareArticle?mini=true&url=https%3A//github.com/Lissy93/personal-security-checklist&title=The%20Ultimate%20Personal%20Cyber%20Security%20Checklist&summary=%F0%9F%94%92%20A%20curated%20list%20of%20100%2B%20tips%20for%20protecting%20digital%20security%20and%20privacy%20in%202020&source=)
-[![Share on Mastodon](https://img.shields.io/badge/Share-Mastodon-56a7e1?style=flat-square&logo=Mastodon)](https://mastodon.social/web/statuses/new?text=Check%20out%20the%20Ultimate%20Personal%20Cyber%20Security%20Checklist%20by%20%40Lissy93%20on%20%23GitHub%20%20%F0%9F%94%90%20%E2%9C%A8)
+http://www.linkedin.com/shareArticle?mini=true&url=https://github.com/o0om/lunar-security-checklist&title=The%20Ultimate%20Lunar%20Security%20Checklist&summary=%F0%9F%94%92%20A%20curated%20list%20of%20100%2B%20tips%20for%20protecting%20digital%20security%20and%20privacy%20in%202024&source=https://github.com/o0om)
+[![Share on Facebook](https://img.shields.io/badge/Share-Facebook-4267b2?style=flat-square&logo=Facebook)](https://www.linkedin.com/shareArticle?mini=true&url=https%3A//github.com/o0om/lunar-security-checklist&title=The%20Ultimate%20Lunar%20Security%20Checklist&summary=%F0%9F%94%92%20A%20curated%20list%20of%20100%2B%20tips%20for%20protecting%20digital%20security%20and%20privacy%20in%202024&source=)
+[![Share on Mastodon](https://img.shields.io/badge/Share-Mastodon-56a7e1?style=flat-square&logo=Mastodon)](https://mastodon.social/web/statuses/new?text=Check%20out%20the%20Ultimate%20Lunar%20Security%20Checklist%20by%20%40o0om%20on%20%23GitHub%20%20%F0%9F%94%90%20%E2%9C%A8)
 
 
 
 
 
-*Licensed under [Creative Commons, CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), © [Alicia Sykes](https://aliciasykes.com) 2020*
+*Licensed under [Creative Commons, CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), © [Alicia Sykes](https://aliciasykes.com) 2024*
 
-<a href="https://twitter.com/intent/follow?screen_name=Lissy_Sykes">
-  <img src="https://img.shields.io/twitter/follow/Lissy_Sykes?style=social&logo=twitter" alt="Follow Alicia Sykes on Twitter">
+<a href="https://github.com/o0om">
+  <img src="https://img.shields.io/github/followers/o0om?style=social&logo=github" alt="Follow o0om on GitHub">
 </a>
 
 
@@ -204,7 +204,7 @@ http://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Lissy93/pe
 [Qwant]: https://www.qwant.com
 [SearX]: https://asciimoo.github.io/searx
 
-[VPN Warning Note]: https://github.com/Lissy93/personal-security-checklist/blob/master/5_Privacy_Respecting_Software.md#word-of-warning-8
+[VPN Warning Note]: https://github.com/o0om/lunar-security-checklist/blob/master/5_Privacy_Respecting_Software.md#word-of-warning-8
 
 [//]: # (PRODUCTIVITY SOFTWARE LINKS)
 [NextCloud]: https://nextcloud.com

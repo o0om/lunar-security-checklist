@@ -8,7 +8,7 @@ You can find project setup, build and deploy instructions in the [README](./READ
 ---
 
 > [!NOTE]
-> **Working on your first Pull Request?** You can learn more about contributing to open source at [Git-In](https://github.com/Lissy93/git-in)
+> **Working on your first Pull Request?** You can learn more about contributing to open source at [GitHub's guide](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
 > [!IMPORTANT]
 > 
