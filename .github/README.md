@@ -3,7 +3,6 @@
 <p align="center">
 <b><i>The ultimate list of tips to secure your digital life</i></b>
 <br />
-<b>🌐 <a href="https://digital-defense.io/">digital-defense.io</a></b><br />
 <br />
 <a href="https://personal-security-checklist.as93.net"><img src="https://i.ibb.co/Rb6P6h6/shield.png" width="64" /><br /></a>
 <br />
@@ -97,11 +96,6 @@ Before submitting an issue or PR, please ensure you've followed the [community g
 
 ![sponsors badge](https://readme-contribs.as93.net/sponsors/lissy93?avatarSize=80&perRow=10)
 
-### Contributors
-
-![contributors badge](https://readme-contribs.as93.net/contributors/lissy93/personal-security-checklist?perRow=16&limit=96)
-
-
 ### Stargzers
 
 ![stargazers badge](https://readme-contribs.as93.net/stargazers/lissy93/personal-security-checklist?perRow=16&limit=64)
@@ -115,8 +109,6 @@ Thank you to all who have contributed to, or sponsored this project!
 
 
 If you've found this repository helpful, consider sponsoring me on GitHub if you're able 💜
-
-### Contributors
 
 
 ---

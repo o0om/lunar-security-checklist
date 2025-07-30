@@ -135,67 +135,16 @@ export default component$(() => {
       </article>
       <div class="divider"></div>
 
-      <article class="bg-back p-8 mx-auto max-w-[1200px] my-8 rounded-lg shadow-md">
-        <h2 class="text-3xl mb-2" id="author">About the Author</h2>
-          <p>
-            This project was originally started by
-            me, <a href="https://aliciasykes.com" class="link link-primary">Alicia Sykes</a>
-            - with a lot of help from the community.
-          </p>
-          <br />
-          <div class="ml-4 float-right">
-            <img class="rounded-lg" width="180" height="240" alt="Alicia Sykes" src="https://i.ibb.co/fq10qhL/DSC-0597.jpg" />
-            <div class="flex gap-2 my-2 justify-between">
-              {
-                socials.map((social, index) => (
-                  <a key={index} href={social.link}>
-                    <Icon icon={social.icon} width={24} height={24} />
-                  </a>
-                ))
-              }
-            </div>
-          </div>
-          <p class="text-lg italic font-thin">
-            I write apps which aim to help people <b>escape big tech, secure their data, and protect their privacy</b>.
-          </p>
-          <br />
-          <p>
-            I have a particular interest in self-hosting, Linux, security and OSINT.<br />
-            So if this type of stuff interests you, check out these other projects:
-          </p>
-          <ul class="list-disc pl-8">
-            {
-              projects.map((project, index) => (
-                <li key={index}>
-                  <img class="rounded inline mr-1" width="20" height="20" alt={project.title} src={project.icon} />
-                  <a href={project.link} class="link link-secondary" target="_blank" rel="noreferrer">
-                    {project.title}
-                  </a> - {project.description}
-                </li>
-              ))
-            }
-          </ul>
-          <br />
-          <p>
-            For a more open source apps I've published,
-            see <a href="https://apps.aliciasykes.com/" class="link link-primary">apps.aliciasykes.com</a>,
-            or <a href="https://github.com/lissy93" class="link link-primary">follow me on GitHub</a>
-          </p>
-
-      </article>
-
-      <div class="divider"></div>
-
       <article class="bg-back p-8 mx-auto max-w-[1200px] m-8 rounded-lg shadow-md">
         <h2 class="text-3xl mb-2">License</h2>
         <p>
           This project is split-licensed, with the checklist content (located
-          in <a class="link" href="https://github.com/Lissy93/personal-security-checklist/blob/HEAD/personal-security-checklist.yml">
+          in <a class="link" href="https://github.com/o0om/lunar-security-checklist/blob/main/personal-security-checklist.yml">
             <code>personal-security-checklist.yml</code>
           </a>) being licensed
           under <b><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></b>.
           And everything else (including all the code), licensed
-          under <b><a href="https://gist.github.com/Lissy93/143d2ee01ccc5c052a17">MIT</a></b>.
+          under <b><a href="https://github.com/o0om/lunar-security-checklist/blob/main/LICENSE">MIT</a></b>.
         </p>
         <pre class="bg-front whitespace-break-spaces rounded text-xs my-2 mx-auto p-2">
           {license}
