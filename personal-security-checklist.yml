@@ -1965,3 +1965,61 @@
     details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
 
   color: lime
+  
+  details: >-
+   When Communating with financial institutions, 
+   use secure channels and avoid sharing  sensitive information via email or unsecured websites. 
+
+-  title: IoT Security 
+   slug: iot-security
+   description: Securing Your Smart home and IoT Devices. 
+   icon: iot 
+   color: lime 
+   intro: >-
+    Internet Of Things (IoT) devices are increasingly common in homes and can pose significant
+    security risks. Secure your smart devices, use strong passwords, and keep them updated.
+    checklist:
+    - point: Change Default Passwords 
+    priority: Essential
+    details: >-
+    Always change the default passwords on youur IoT devices. Use Strong, unique passwords 
+    for each device. Consider using your password manager to generate and store these passwords. 
+
+    - point: Keep IoT Devices Updated 
+      priority: Essential
+      details: >-
+      Regularly update the firmware on your IoT devices to patch security vulnerabilities.
+      Enable Automatic updates when available.
+
+      - point: Use a Seperate IoT Network 
+      priority: Advanced 
+      details: >-
+       Consider setting up  seperate network for your IoT devices. This Isolates them from
+       your main network and limits the damage if one device is compromised.
+
+      -point: Research Device Security 
+      priority: Essential 
+      details: >-
+       Before purchasing IoT devices, research their security track record. Look for devices 
+       that recieve regular security updates and have good privacy policies.
+
+- point: Disable Unused Features 
+  priority: Optional 
+  details: >- 
+   Disable features you don't use on your IoT devices. This reduces the Attack surface
+   and improves security. 
+
+
+- point: Use Reputable Brands 
+  priority: Essential 
+  details: >-
+   Choose IoT devices from reputable manufacturers that prioritize security. Avoid 
+   unknown brands that may have poor security practices. 
+
+- point: Monitor Device Activity 
+  priority: Advanced 
+  details: >- 
+   Use network monitoring tools to keep track of your IoT devices' network activity.
+   Look for unusual traffic patterns that might indicate compromise. 
+
+- point: Secure Smart Home Hubs 

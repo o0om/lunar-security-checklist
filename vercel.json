@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "buildCommand": "cd web && npm run build.vercel",
+  "outputDirectory": "web/dist"
+} 

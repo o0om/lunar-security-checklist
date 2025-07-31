@@ -1,1 +1,1796 @@
-../../personal-security-checklist.yml
+- title: Authentication
+  slug: authentication
+  description: Securing your online account login credentials
+  icon: password
+  color: yellow
+  intro: >-
+    Most reported data breaches are caused by the use of weak, default, or stolen passwords
+    (according to [this Verizon report](http://www.verizonenterprise.com/resources/reports/rp_dbir-2016-executive-summary_xg_en.pdf)).
+    Use long, strong, and unique passwords, manage them in a secure password manager, enable
+    2-factor authentication, keep on top of breaches, and take care while logging into your accounts.
+  checklist:
+  - point: Use a Strong Password
+    priority: Essential
+    details: >-
+      If your password is too short, or contains dictionary words, places, or names, then it can be easily
+      cracked through brute force or guessed by someone. The easiest way to make a strong password is by
+      making it long (12+ characters) — consider using a 'passphrase' made up of many words. Alternatively,
+      use a password generator to create a long, strong random password. Have a play with
+      [Security.org's How Secure Is My Password?](https://security.org/how-secure-is-my-password/), to get an idea of how quickly common
+      passwords can be cracked. Read more about creating strong passwords:
+      [securityinabox.org](https://securityinabox.org/en/passwords/passwords-and-2fa/).
+
+  - point: Don't Reuse Passwords
+    priority: Essential
+    details: >-
+      If someone were to reuse a password and one site they had an account with suffered a leak, then a
+      criminal could easily gain unauthorized access to their other accounts. This is usually done through
+      large-scale automated login requests, and it is called Credential Stuffing. Unfortunately, this is all
+      too common, but it's simple to protect against — use a different password for each of your online accounts.
+
+  - point: Use a Secure Password Manager
+    priority: Essential
+    details: >-
+      For most people, it is going to be near-impossible to remember hundreds of strong and unique passwords.
+      A password manager is an application that generates, stores, and auto-fills your login credentials for you.
+      All your passwords will be encrypted against 1 master password (which you must remember, and it should be
+      very strong). Most password managers have browser extensions and mobile apps, so whatever device you are on,
+      your passwords can be auto-filled. A good all-rounder is
+      [Bitwarden](https://awesome-privacy.xyz/essentials/password-managers/bitwarden), or see
+      [Recommended Password Managers](https://awesome-privacy.xyz/essentials/password-managers).
+
+  - point: Avoid Sharing Passwords
+    priority: Essential
+    details: >-
+      While there may be times that you need to share access to an account with another person, you should
+      generally avoid doing this because it makes it easier for the account to become compromised. If you
+      absolutely do need to share a password — for example, when working on a team with a shared account — this
+      should be done via features built into a password manager.
+
+  - point: Enable 2-Factor Authentication
+    priority: Essential
+    details: >-
+      2FA is where you must provide both something you know (a password) and something you have (such as a
+      code on your phone) to log in. This means that if anyone has your password (e.g., through phishing,
+      malware, or a data breach), they will not be able to log into your account. It's easy to get started,
+      download [an authenticator app](https://github.com/Lissy93/awesome-privacy#2-factor-authentication)
+      onto your phone, and then go to your account security settings and follow the steps to enable 2FA. Next
+      time you log in on a new device, you will be prompted for the code that is displayed in the app on your phone
+      (it works without internet, and the code usually changes every 30 seconds).
+
+  - point: Keep Backup Codes Safe
+    priority: Essential
+    details: >-
+      When you enable multi-factor authentication, you will usually be given several codes that you can use if
+      your 2FA method is lost, broken, or unavailable. Keep these codes somewhere safe to prevent loss or
+      unauthorized access. You should store these on paper or in a safe place on disk (e.g., in offline storage
+      or an encrypted file/drive). Don't store these in your password manager as 2FA sources and passwords
+      should be kept separately.
+
+  - point: Use Hardware Security Keys
+    priority: Advanced
+    details: >-
+      For maximum security, consider using hardware security keys like [YubiKey](https://www.yubico.com/) or 
+      [Titan Security Key](https://cloud.google.com/titan-security-key). These physical devices provide the 
+      strongest form of 2FA and are resistant to phishing attacks. They work by requiring you to physically 
+      touch the key when logging in, making remote attacks impossible.
+
+  - point: Sign Up for Breach Alerts
+    priority: Optional
+    details: >-
+      After a website suffers a significant data breach, the leaked data often ends up on the internet. Several websites collect
+      these leaked records and allow you to search your email address to check if you are in any of their lists.
+      [Firefox Monitor](https://monitor.firefox.com), [Have I Been Pwned](https://haveibeenpwned.com),
+      and [DeHashed](https://dehashed.com) allow you to sign up for monitoring, where they will notify you if your
+      email address appears in any new data sets. It is useful to know as soon as possible when this happens so
+      that you can change your passwords for the affected accounts. [Have i been pwned](https://awesome-privacy.xyz/security-tools/online-tools/have-i-been-pwned) also has domain-wide
+      notification, where you can receive alerts if any email addresses under your entire domain appear (useful if
+      you use aliases for [anonymous forwarding](https://github.com/Lissy93/awesome-privacy#anonymous-mail-forwarding)).
+
+  - point: Shield your Password/PIN
+    priority: Optional
+    details: >-
+      When typing your password in public places, ensure you are not in direct line of sight of a CCTV camera and
+      that no one can see over your shoulder. Cover your password or pin code while you type, and do not
+      reveal any plain text passwords on your screen.
+
+  - point: Update Critical Passwords Periodically
+    priority: Optional
+    details: >-
+      Database leaks and breaches are common, and, likely, several of your passwords are already somewhere
+      online. Occasionally updating passwords of security-critical accounts can help mitigate this. But providing
+      that all your passwords are long, strong, and unique, there is no need to do this too often — annually should be
+      sufficient. Enforcing mandatory password changes within organisations is [no longer recommended](https://duo.com/decipher/microsoft-will-no-longer-recommend-forcing-periodic-password-changes),
+      as it encourages colleagues to select weaker passwords.
+
+  - point: Don't Save your Password in Browsers
+    priority: Optional
+    details: >-
+      Browser password managers are not as secure as dedicated password managers. They are often not encrypted,
+      can be easily accessed by anyone with access to your device, and may sync passwords across devices insecurely.
+      Use a dedicated password manager instead, which will provide better security and features.
+
+  - point: Use Passphrases for Master Passwords
+    priority: Advanced
+    details: >-
+      For your password manager master password, consider using a passphrase instead of a complex password.
+      A passphrase is a series of random words that are easy to remember but hard to crack. For example:
+      "correct horse battery staple" is much more secure than "P@ssw0rd123" and easier to remember.
+
+  - point: Use Biometric Authentication
+    priority: Optional
+    details: >-
+      Use biometric authentication (fingerprint, face recognition) when available on your devices.
+      This provides convenient and secure authentication, though it should be used in combination
+      with strong passwords, not as a replacement.
+
+  - point: Monitor Account Activity
+    priority: Essential
+    details: >-
+      Regularly check your accounts for unusual activity. Look for login attempts from unknown
+      locations, password changes you didn't make, or other suspicious activity. Many services
+      provide activity logs in their security settings.
+
+  - point: Use Account Recovery Options
+    priority: Essential
+    details: >-
+      Set up account recovery options like backup email addresses or phone numbers. This helps
+      you regain access to your accounts if you lose your primary authentication method.
+
+  - point: Use Single Sign-On (SSO) Carefully
+    priority: Advanced
+    details: >-
+      When using SSO services like Google or Microsoft accounts, be aware that compromising
+      one account can affect access to multiple services. Use strong security on your SSO account.
+
+  - point: Implement Account Lockout Policies
+    priority: Advanced
+    details: >-
+      For critical accounts, consider implementing lockout policies that temporarily disable
+      accounts after multiple failed login attempts. This helps prevent brute force attacks.
+
+
+
+- title: Browsing
+  slug: browsing
+  description: Securing your web browsing and online activities
+  icon: browser
+  color: green
+  intro: >-
+    Your web browser is your gateway to the internet, and it can reveal a lot about your online activities.
+    Use secure browsers, install privacy extensions, and be mindful of what information you share online.
+  checklist:
+  - point: Use a Privacy-Focused Browser
+    priority: Essential
+    details: >-
+      Choose a browser that prioritizes privacy and security. [Firefox](https://www.mozilla.org/firefox/) with privacy settings enabled,
+      [Brave](https://brave.com/), or [Tor Browser](https://www.torproject.org/) are good options. Avoid browsers that are known to collect excessive user data.
+
+  - point: Install Privacy Extensions
+    priority: Essential
+    details: >-
+      Install browser extensions that block trackers, ads, and enhance privacy. [uBlock Origin](https://ublockorigin.com/),
+      [Privacy Badger](https://privacybadger.org/), and [HTTPS Everywhere](https://www.eff.org/https-everywhere) are good starting points.
+
+  - point: Use HTTPS
+    priority: Essential
+    details: >-
+      Always use HTTPS when possible. Look for the padlock icon in your browser's address bar.
+      HTTPS encrypts your connection to websites, protecting your data from interception.
+
+  - point: Clear Cookies Regularly
+    priority: Optional
+    details: >-
+      Regularly clear your browser cookies and cache to remove tracking data. Consider using
+      browser settings to automatically clear data when you close the browser.
+
+  - point: Use Private/Incognito Mode
+    priority: Optional
+    details: >-
+      Use private browsing mode when you don't want your browsing history to be saved locally.
+      Remember that this doesn't hide your activity from your ISP or the websites you visit.
+
+  - point: Be Mindful of Social Media
+    priority: Optional
+    details: >-
+      Be careful about what you share on social media. Information you post can be used for
+      social engineering attacks or to build profiles about you. Consider the privacy implications
+      before sharing personal information.
+
+  - point: Use DNS over HTTPS
+    priority: Advanced
+    details: >-
+      Enable DNS over HTTPS (DoH) in your browser to encrypt your DNS queries. This prevents
+      your ISP from seeing which websites you're visiting and protects against DNS hijacking.
+
+  - point: Disable JavaScript for Untrusted Sites
+    priority: Advanced
+    details: >-
+      Consider using browser extensions like [NoScript](https://noscript.net/) to disable JavaScript on untrusted websites.
+      This can prevent malicious scripts from running and protect against various attacks.
+
+  - point: Use a VPN
+    priority: Advanced
+    details: >-
+      Consider using a VPN to encrypt your internet traffic and hide your IP address. Choose
+      a reputable VPN provider like [ProtonVPN](https://protonvpn.com/), [NordVPN](https://nordvpn.com/), or [ExpressVPN](https://www.expressvpn.com/) that doesn't log your activity.
+
+  - point: Use Privacy-Focused Search Engines
+    priority: Essential
+    details: >-
+      Use privacy-focused search engines like [DuckDuckGo](https://duckduckgo.com/) or [Startpage](https://www.startpage.com/) instead of Google.
+      These don't track your searches or build profiles about you.
+
+  - point: Block Third-Party Cookies
+    priority: Essential
+    details: >-
+      Configure your browser to block third-party cookies. This prevents tracking across
+      different websites and improves your privacy.
+
+  - point: Use Browser Fingerprinting Protection
+    priority: Advanced
+    details: >-
+      Use extensions like [Canvas Fingerprint Defender](https://addons.mozilla.org/en-US/firefox/addon/canvas-fingerprint-defender/) or
+      [Privacy Possum](https://addons.mozilla.org/en-US/firefox/addon/privacy-possum/) to protect against browser fingerprinting.
+
+  - point: Disable WebRTC
+    priority: Advanced
+    details: >-
+      Disable WebRTC in your browser to prevent IP address leaks. This is especially important
+      when using a VPN, as WebRTC can bypass the VPN and reveal your real IP address.
+
+  - point: Use Secure Bookmarks
+    priority: Optional
+    details: >-
+      Bookmark important websites using HTTPS URLs to avoid accidentally visiting
+      insecure versions of sites.
+
+  - point: Review Browser Extensions
+    priority: Essential
+    details: >-
+      Regularly review and remove unnecessary browser extensions. Extensions can have
+      access to your browsing data and may pose security risks.
+
+  - point: Use Browser Security Headers
+    priority: Advanced
+    details: >-
+      Consider using extensions that add security headers to your requests, such as
+      [HTTPS Everywhere](https://www.eff.org/https-everywhere) or [Smart HTTPS](https://addons.mozilla.org/en-US/firefox/addon/smart-https/).
+
+  - point: Disable Auto-Fill for Sensitive Sites
+    priority: Essential
+    details: >-
+      Disable browser auto-fill for banking, healthcare, and other sensitive websites.
+      Use your password manager's auto-fill instead for better security.
+
+  - point: Use Browser Sandboxing
+    priority: Advanced
+    details: >-
+      Consider using browsers with built-in sandboxing features or run your browser
+      in a sandboxed environment for additional security.
+
+  - point: Monitor Browser Permissions
+    priority: Essential
+    details: >-
+      Regularly review which permissions your browser has granted to websites.
+      Revoke unnecessary permissions to limit data access.
+
+  - point: Use Secure Browser Settings
+    priority: Essential
+    details: >-
+      Configure your browser's security and privacy settings. Enable features like
+      "Do Not Track" and disable features that may compromise privacy.
+
+
+
+
+
+
+
+
+
+- title: Physical Security
+  slug: physical-security
+  description: Protecting your devices and physical access
+  icon: lock
+  color: red
+  intro: >-
+    Physical security is just as important as digital security. Protect your devices from theft,
+    use screen locks, and be careful about who has access to your equipment.
+  checklist:
+  - point: Use Screen Locks
+    priority: Essential
+    details: >-
+      Always lock your computer and mobile devices when you step away. Use strong passwords,
+      PINs, or biometric authentication.
+
+  - point: Keep Devices Secure
+    priority: Essential
+    details: >-
+      Don't leave your devices unattended in public places. Use laptop locks when possible
+      and keep mobile devices in secure pockets or bags.
+
+  - point: Use Full Disk Encryption
+    priority: Essential
+    details: >-
+      Enable full disk encryption on all your devices. This protects your data even if your
+      device is stolen or lost.
+
+  - point: Secure Your Workspace
+    priority: Optional
+    details: >-
+      Be mindful of what's visible on your screen when in public places. Use privacy screens
+      if available and be careful about shoulder surfing.
+
+  - point: Use Kensington Locks
+    priority: Optional
+    details: >-
+      Use physical locks like Kensington locks to secure laptops and other portable devices
+      when leaving them unattended.
+
+  - point: Secure Your Home
+    priority: Advanced
+    details: >-
+      Consider installing security cameras, alarms, or smart locks to protect your home
+      and the devices inside it.
+
+  - point: Use RFID Protection
+    priority: Advanced
+    details: >-
+      Use RFID-blocking wallets or sleeves to protect your credit cards and passports
+      from unauthorized scanning.
+
+- title: Software Security
+  slug: software-security
+  description: Keeping your software and systems secure
+  icon: software
+  color: indigo
+  intro: >-
+    Software vulnerabilities are a major security risk. Keep your operating system and applications
+    updated, use antivirus software, and be careful about what you install.
+  checklist:
+  - point: Keep Software Updated
+    priority: Essential
+    details: >-
+      Regularly update your operating system and all applications to patch security vulnerabilities.
+      Enable automatic updates when possible.
+
+  - point: Use Antivirus Software
+    priority: Essential
+    details: >-
+      Install and regularly update reputable antivirus software. Run regular scans and keep
+      the software updated with the latest virus definitions.
+
+  - point: Download from Official Sources
+    priority: Essential
+    details: >-
+      Only download software from official websites or app stores. Avoid third-party download
+      sites that may distribute malware.
+
+  - point: Verify Software Authenticity
+    priority: Advanced
+    details: >-
+      Verify the authenticity of software downloads by checking digital signatures or hashes
+      when available.
+
+  - point: Use Sandboxing
+    priority: Advanced
+    details: >-
+      Consider using sandboxing tools to run untrusted software in isolated environments.
+      This prevents malware from affecting your main system.
+
+  - point: Disable Unused Services
+    priority: Optional
+    details: >-
+      Disable unused services and features on your operating system to reduce the attack surface
+      and improve performance.
+
+  - point: Use Virtual Machines
+    priority: Advanced
+    details: >-
+      Consider using virtual machines for testing software or browsing suspicious websites.
+      This provides an additional layer of isolation.
+
+- title: Privacy Protection
+  slug: privacy-protection
+  description: Protecting your personal information and privacy
+  icon: privacy
+  color: teal
+  intro: >-
+    Privacy is closely related to security. Protect your personal information, use privacy tools,
+    and be mindful of what data you share online.
+  checklist:
+  - point: Use Privacy-Focused Search Engines
+    priority: Essential
+    details: >-
+      Use privacy-focused search engines like DuckDuckGo or Startpage instead of Google.
+      These don't track your searches or build profiles about you.
+
+  - point: Use Ad Blockers
+    priority: Essential
+    details: >-
+      Install ad blockers to prevent tracking and improve your browsing experience.
+      Consider using uBlock Origin or similar privacy-focused blockers.
+
+  - point: Use Privacy Extensions
+    priority: Optional
+    details: >-
+      Install browser extensions that enhance privacy like Privacy Badger, HTTPS Everywhere,
+      or Cookie AutoDelete.
+
+  - point: Use Virtual Private Networks
+    priority: Optional
+    details: >-
+      Consider using a VPN to hide your IP address and encrypt your internet traffic.
+      Choose a reputable provider that doesn't log your activity.
+
+  - point: Use Privacy-Focused Email
+    priority: Advanced
+    details: >-
+      Use email providers that prioritize privacy like ProtonMail or Tutanota.
+      These offer end-to-end encryption and strong privacy protections.
+
+  - point: Use Privacy-Focused Browsers
+    priority: Advanced
+    details: >-
+      Use browsers designed for privacy like Firefox with privacy settings, Brave,
+      or Tor Browser for maximum anonymity.
+
+  - point: Limit Data Sharing
+    priority: Essential
+    details: >-
+      Be careful about what personal information you share online. Consider whether
+      each piece of information is necessary to share.
+
+  - point: Use Privacy-Focused Social Media
+    priority: Advanced
+    details: >-
+      Consider using privacy-focused alternatives to mainstream social media platforms.
+      Platforms like Mastodon offer better privacy protections.
+
+- title: Financial Security
+  slug: financial-security
+  description: Protecting your financial accounts and transactions
+  icon: finance
+  color: emerald
+  intro: >-
+    Financial security is critical for protecting your money and preventing fraud.
+    Secure your banking accounts, use secure payment methods, and monitor your accounts regularly.
+  checklist:
+  - point: Use Strong Banking Passwords
+    priority: Essential
+    details: >-
+      Use strong, unique passwords for all your financial accounts. Consider using your
+      password manager to generate and store these passwords securely.
+
+  - point: Enable 2FA on Financial Accounts
+    priority: Essential
+    details: >-
+      Enable two-factor authentication on all your financial accounts including banking,
+      credit cards, and investment accounts.
+
+  - point: Monitor Account Activity
+    priority: Essential
+    details: >-
+      Regularly check your financial accounts for unauthorized transactions. Set up
+      alerts for unusual activity when possible.
+
+  - point: Use Secure Payment Methods
+    priority: Essential
+    details: >-
+      Use secure payment methods like credit cards with fraud protection rather than
+      debit cards for online purchases.
+
+  - point: Use Virtual Credit Cards
+    priority: Optional
+    details: >-
+      Consider using virtual credit cards for online purchases. These provide an
+      additional layer of protection and can be easily cancelled if compromised.
+
+  - point: Freeze Your Credit
+    priority: Advanced
+    details: >-
+      Consider freezing your credit with the major credit bureaus to prevent
+      unauthorized credit applications in your name.
+
+  - point: Use Secure Banking Apps
+    priority: Essential
+    details: >-
+      Only use official banking apps from your financial institution. Avoid
+      third-party financial apps that may not be secure.
+
+  - point: Be Wary of Financial Scams
+    priority: Essential
+    details: >-
+      Be suspicious of unsolicited financial offers, investment opportunities,
+      or requests for personal financial information.
+
+  - point: Use Encrypted Financial Communications
+    priority: Advanced
+    details: >-
+      When communicating with financial institutions, use secure channels
+      and avoid sharing sensitive information via email or unsecured websites.
+
+- title: IoT Security
+  slug: iot-security
+  description: Securing your smart home and IoT devices
+  icon: iot
+  color: lime
+  intro: >-
+    Internet of Things (IoT) devices are increasingly common in homes and can pose significant
+    security risks. Secure your smart devices, use strong passwords, and keep them updated.
+  checklist:
+  - point: Change Default Passwords
+    priority: Essential
+    details: >-
+      Always change the default passwords on your IoT devices. Use strong, unique passwords
+      for each device. Consider using your password manager to generate and store these passwords.
+
+  - point: Keep IoT Devices Updated
+    priority: Essential
+    details: >-
+      Regularly update the firmware on your IoT devices to patch security vulnerabilities.
+      Enable automatic updates when available.
+
+  - point: Use a Separate IoT Network
+    priority: Advanced
+    details: >-
+      Consider setting up a separate network for your IoT devices. This isolates them from
+      your main network and limits the damage if one device is compromised.
+
+  - point: Research Device Security
+    priority: Essential
+    details: >-
+      Before purchasing IoT devices, research their security track record. Look for devices
+      that receive regular security updates and have good privacy policies.
+
+  - point: Disable Unused Features
+    priority: Optional
+    details: >-
+      Disable features you don't use on your IoT devices. This reduces the attack surface
+      and improves security.
+
+  - point: Use Reputable Brands
+    priority: Essential
+    details: >-
+      Choose IoT devices from reputable manufacturers that prioritize security. Avoid
+      unknown brands that may have poor security practices.
+
+  - point: Monitor Device Activity
+    priority: Advanced
+    details: >-
+      Use network monitoring tools to keep track of your IoT devices' network activity.
+      Look for unusual traffic patterns that might indicate compromise.
+
+  - point: Secure Smart Home Hubs
+    priority: Advanced
+    details: >-
+      If you use a smart home hub like [Home Assistant](https://www.home-assistant.io/),
+      ensure it's properly secured with strong passwords and regular updates.
+
+- title: Cloud Security
+  slug: cloud-security
+  description: Securing your cloud storage and services
+  icon: cloud
+  color: sky
+  intro: >-
+    Cloud services are convenient but can pose security risks. Choose secure providers,
+    enable encryption, and be careful about what you store in the cloud.
+  checklist:
+  - point: Choose Secure Cloud Providers
+    priority: Essential
+    details: >-
+      Choose cloud providers that prioritize security and privacy. Look for providers
+      that offer end-to-end encryption and have strong security practices. Consider
+      [ProtonDrive](https://proton.me/drive), [Tresorit](https://tresorit.com), or
+      [Sync.com](https://www.sync.com) for secure cloud storage.
+
+  - point: Enable Two-Factor Authentication
+    priority: Essential
+    details: >-
+      Enable 2FA on all your cloud accounts to add an extra layer of security.
+      This prevents unauthorized access even if someone gets your password.
+
+  - point: Use Client-Side Encryption
+    priority: Advanced
+    details: >-
+      Use cloud services that offer client-side encryption, meaning your data is
+      encrypted before it leaves your device. This ensures that even the cloud provider
+      cannot access your data.
+
+  - point: Encrypt Sensitive Files
+    priority: Essential
+    details: >-
+      Encrypt sensitive files before uploading them to the cloud. Use tools like
+      [7-Zip](https://www.7-zip.org/) with AES encryption or [VeraCrypt](https://www.veracrypt.fr/)
+      for creating encrypted containers.
+
+  - point: Use Strong Passwords
+    priority: Essential
+    details: >-
+      Use strong, unique passwords for all your cloud accounts. Consider using your
+      password manager to generate and store these passwords securely.
+
+  - point: Review Sharing Settings
+    priority: Essential
+    details: >-
+      Regularly review the sharing settings on your cloud storage. Ensure that files
+      are only shared with intended recipients and that public links are disabled
+      when not needed.
+
+  - point: Use Zero-Knowledge Providers
+    priority: Advanced
+    details: >-
+      Consider using zero-knowledge cloud providers that cannot access your data.
+      Providers like [ProtonDrive](https://proton.me/drive) and [Tresorit](https://tresorit.com)
+      offer this level of security.
+
+  - point: Backup Cloud Data Locally
+    priority: Optional
+    details: >-
+      Keep local backups of important cloud data. This ensures you have access to
+      your data even if the cloud service is unavailable or compromised.
+
+- title: Gaming Security
+  slug: gaming-security
+  description: Securing your gaming accounts and devices
+  icon: gaming
+  color: violet
+  intro: >-
+    Gaming accounts and devices can be valuable targets for attackers. Secure your
+    gaming accounts, use strong passwords, and be careful about what you share online.
+  checklist:
+  - point: Use Strong Gaming Passwords
+    priority: Essential
+    details: >-
+      Use strong, unique passwords for all your gaming accounts. Consider using your
+      password manager to generate and store these passwords securely.
+
+  - point: Enable Two-Factor Authentication
+    priority: Essential
+    details: >-
+      Enable 2FA on all your gaming accounts including Steam, PlayStation Network,
+      Xbox Live, and Nintendo accounts. This adds an extra layer of security.
+
+  - point: Be Careful with Voice Chat
+    priority: Optional
+    details: >-
+      Be careful about what personal information you share in voice chat. Avoid
+      sharing your real name, location, or other personal details with strangers.
+
+  - point: Use Gaming VPNs
+    priority: Optional
+    details: >-
+      Consider using a VPN when gaming to protect your IP address and reduce
+      the risk of DDoS attacks. Choose a VPN with low latency for gaming.
+
+  - point: Secure Your Gaming PC
+    priority: Essential
+    details: >-
+      Keep your gaming PC updated with the latest security patches. Use antivirus
+      software and be careful about what you download.
+
+  - point: Be Wary of Game Mods
+    priority: Essential
+    details: >-
+      Be careful when downloading game mods from unofficial sources. Only download
+      from trusted sources and scan files with antivirus software.
+
+  - point: Use Official Gaming Platforms
+    priority: Essential
+    details: >-
+      Only download games from official platforms like Steam, Epic Games Store,
+      or official console stores. Avoid unofficial sources that may distribute malware.
+
+  - point: Monitor Account Activity
+    priority: Optional
+    details: >-
+      Regularly check your gaming accounts for unauthorized activity. Look for
+      unusual login attempts or purchases you didn't make.
+
+- title: Cryptocurrency Security
+  slug: cryptocurrency-security
+  description: Securing your cryptocurrency wallets and transactions
+  icon: crypto
+  color: amber
+  intro: >-
+    Cryptocurrency security is critical for protecting your digital assets. Use
+    secure wallets, enable 2FA, and be extremely careful about private keys.
+  checklist:
+  - point: Use Hardware Wallets
+    priority: Essential
+    details: >-
+      For significant amounts of cryptocurrency, use hardware wallets like
+      [Ledger](https://www.ledger.com/) or [Trezor](https://trezor.io/). These
+      provide the highest level of security by keeping your private keys offline.
+
+  - point: Secure Your Private Keys
+    priority: Essential
+    details: >-
+      Never share your private keys with anyone. Store them securely offline
+      and consider using a safe or safety deposit box for backup copies.
+
+  - point: Use Strong Passwords
+    priority: Essential
+    details: >-
+      Use strong, unique passwords for all your cryptocurrency accounts and wallets.
+      Consider using your password manager to generate and store these passwords.
+
+  - point: Enable Two-Factor Authentication
+    priority: Essential
+    details: >-
+      Enable 2FA on all your cryptocurrency exchange accounts and wallets.
+      Use authenticator apps rather than SMS for better security.
+
+  - point: Use Reputable Exchanges
+    priority: Essential
+    details: >-
+      Only use reputable cryptocurrency exchanges with strong security practices.
+      Research exchanges thoroughly before using them.
+
+  - point: Verify Transaction Addresses
+    priority: Essential
+    details: >-
+      Always double-check cryptocurrency addresses before sending transactions.
+      A single character mistake can result in permanent loss of funds.
+
+  - point: Keep Software Updated
+    priority: Essential
+    details: >-
+      Keep your wallet software and exchange apps updated to patch security
+      vulnerabilities. Enable automatic updates when available.
+
+  - point: Use Cold Storage
+    priority: Advanced
+    details: >-
+      Consider using cold storage (offline wallets) for long-term cryptocurrency
+      holdings. This provides maximum security against online threats.
+
+  - point: Be Wary of Scams
+    priority: Essential
+    details: >-
+      Be extremely cautious of cryptocurrency scams. Never share your private keys,
+      beware of fake giveaways, and verify all information independently.
+
+- title: Travel Security
+  slug: travel-security
+  description: Securing your devices and data while traveling
+  icon: travel
+  color: rose
+  intro: >-
+    Traveling with electronic devices requires special security considerations.
+    Protect your devices, use secure networks, and be careful about what you access.
+  checklist:
+  - point: Use Travel Laptops
+    priority: Advanced
+    details: >-
+      Consider using a separate laptop for travel that contains minimal sensitive data.
+      This reduces the risk of data loss if the device is lost or stolen.
+
+  - point: Enable Device Encryption
+    priority: Essential
+    details: >-
+      Ensure all your travel devices are encrypted. This protects your data even
+      if the device is lost or stolen.
+
+  - point: Use VPN on Public WiFi
+    priority: Essential
+    details: >-
+      Always use a VPN when connecting to public WiFi networks. This encrypts
+      your traffic and protects against eavesdropping.
+
+  - point: Disable Auto-Connect
+    priority: Essential
+    details: >-
+      Disable auto-connect to WiFi networks on your devices. This prevents
+      connecting to potentially malicious networks automatically.
+
+  - point: Use Mobile Hotspots
+    priority: Optional
+    details: >-
+      Consider using your phone's mobile hotspot instead of public WiFi when possible.
+      This provides a more secure connection.
+
+  - point: Secure Your Hotel Room
+    priority: Optional
+    details: >-
+      When staying in hotels, secure your devices when leaving the room. Use
+      hotel safes for valuable items and consider using a laptop lock.
+
+  - point: Be Careful with Public Computers
+    priority: Essential
+    details: >-
+      Avoid using public computers for sensitive activities like banking or
+      accessing important accounts. These computers may be compromised.
+
+  - point: Backup Important Data
+    priority: Essential
+    details: >-
+      Before traveling, backup important data to the cloud or external storage.
+      This ensures you don't lose data if your device is lost or stolen.
+
+  - point: Use Travel-Specific Security
+    priority: Advanced
+    details: >-
+      Consider using travel-specific security tools like [ExpressVPN](https://www.expressvpn.com/)
+      or [NordVPN](https://nordvpn.com/) for secure internet access while traveling.
+
+- title: Business Security
+  slug: business-security
+  description: Securing business accounts and work-related data
+  icon: business
+  color: slate
+  intro: >-
+    Business security is critical for protecting company data and preventing
+    breaches. Use strong security practices, secure your work devices, and
+    be careful about data handling.
+  checklist:
+  - point: Use Strong Business Passwords
+    priority: Essential
+    details: >-
+      Use strong, unique passwords for all business accounts. Consider using
+      a business password manager like [1Password Business](https://1password.com/business/)
+      or [LastPass Business](https://www.lastpass.com/business).
+
+  - point: Enable Business 2FA
+    priority: Essential
+    details: >-
+      Enable two-factor authentication on all business accounts including email,
+      cloud storage, and business applications.
+
+  - point: Use Business VPNs
+    priority: Essential
+    details: >-
+      Use a business VPN when working remotely or accessing company resources.
+      This ensures secure access to business networks and data.
+
+  - point: Secure Business Email
+    priority: Essential
+    details: >-
+      Use secure business email providers and enable encryption. Consider
+      services like [ProtonMail Business](https://proton.me/business) or
+      [Tutanota Business](https://tutanota.com/business).
+
+  - point: Implement Data Classification
+    priority: Advanced
+    details: >-
+      Classify business data by sensitivity level and implement appropriate
+      security measures for each classification.
+
+  - point: Use Business Cloud Security
+    priority: Essential
+    details: >-
+      Use business-grade cloud services with strong security features.
+      Consider [Microsoft 365](https://www.microsoft.com/microsoft-365) or
+      [Google Workspace](https://workspace.google.com/) with security add-ons.
+
+  - point: Train Employees on Security
+    priority: Essential
+    details: >-
+      Provide regular security training to employees. Cover topics like
+      phishing awareness, password security, and data protection.
+
+  - point: Implement Access Controls
+    priority: Advanced
+    details: >-
+      Implement role-based access controls to ensure employees only have
+      access to the data they need for their job functions.
+
+  - point: Use Business Antivirus
+    priority: Essential
+    details: >-
+      Use business-grade antivirus software on all company devices.
+      Consider solutions like [Bitdefender Business](https://www.bitdefender.com/business/)
+      or [Kaspersky Business](https://www.kaspersky.com/business).
+
+  - point: Secure Business Communications
+    priority: Essential
+    details: >-
+      Use secure communication tools for business discussions. Consider
+      [Signal Business](https://signal.org/business) or encrypted
+      messaging platforms.
+
+- title: Healthcare Security
+  slug: healthcare-security
+  description: Securing medical information and healthcare accounts
+  icon: healthcare
+  color: emerald
+  intro: >-
+    Healthcare security is critical for protecting sensitive medical information.
+    Secure your health accounts, be careful with medical data, and use
+    privacy-focused health tools.
+  checklist:
+  - point: Secure Health Accounts
+    priority: Essential
+    details: >-
+      Use strong, unique passwords for all healthcare accounts including
+      patient portals, insurance accounts, and pharmacy accounts.
+
+  - point: Enable Health Account 2FA
+    priority: Essential
+    details: >-
+      Enable two-factor authentication on all healthcare accounts where available.
+      This adds an extra layer of security to your medical information.
+
+  - point: Use Secure Health Apps
+    priority: Essential
+    details: >-
+      Only use health apps from reputable sources. Research apps before
+      installing them and be careful about what data you share.
+
+  - point: Secure Medical Devices
+    priority: Advanced
+    details: >-
+      If you use connected medical devices, ensure they're properly secured
+      with strong passwords and regular updates.
+
+  - point: Use Privacy-Focused Health Tools
+    priority: Optional
+    details: >-
+      Consider using privacy-focused health tools that don't share your data
+      with third parties. Research tools before using them.
+
+  - point: Be Careful with Medical Data
+    priority: Essential
+    details: >-
+      Be careful about sharing medical information online or with apps.
+      Consider whether each piece of information is necessary to share.
+
+  - point: Use Encrypted Health Communications
+    priority: Advanced
+    details: >-
+      When communicating with healthcare providers online, use secure
+      channels and avoid sharing sensitive information via unsecured email.
+
+  - point: Monitor Health Account Activity
+    priority: Optional
+    details: >-
+      Regularly check your healthcare accounts for unauthorized activity.
+      Look for unusual login attempts or changes to your information.
+
+  - point: Use Health Data Encryption
+    priority: Advanced
+    details: >-
+      If you store health data locally, encrypt it using tools like
+      [VeraCrypt](https://www.veracrypt.fr/) or built-in encryption features.
+
+- title: Child Safety Online
+  slug: child-safety-online
+  description: Protecting children's online safety and privacy
+  icon: child
+  color: pink
+  intro: >-
+    Children's online safety requires special attention and tools. Use parental
+    controls, monitor online activity, and teach children about internet safety.
+  checklist:
+  - point: Use Parental Controls
+    priority: Essential
+    details: >-
+      Enable parental controls on all devices used by children. Use tools like
+      [OpenDNS Family Shield](https://www.opendns.com/setupguide/#familyshield)
+      or built-in parental controls on devices.
+
+  - point: Monitor Online Activity
+    priority: Essential
+    details: >-
+      Regularly monitor children's online activity and discuss internet safety.
+      Use monitoring tools and have open conversations about online behavior.
+
+  - point: Use Child-Safe Browsers
+    priority: Essential
+    details: >-
+      Use child-safe browsers and search engines like [Kiddle](https://www.kiddle.co/)
+      or [SafeSearch](https://www.google.com/safesearch) to filter inappropriate content.
+
+  - point: Secure Children's Accounts
+    priority: Essential
+    details: >-
+      Use strong passwords for children's accounts and enable parental controls
+      where available. Monitor account activity regularly.
+
+  - point: Teach Internet Safety
+    priority: Essential
+    details: >-
+      Teach children about internet safety, including not sharing personal
+      information, being careful with strangers, and reporting inappropriate content.
+
+  - point: Use Child-Safe Apps
+    priority: Essential
+    details: >-
+      Only allow children to use apps that are appropriate for their age.
+      Research apps before allowing children to use them.
+
+  - point: Set Screen Time Limits
+    priority: Optional
+    details: >-
+      Set appropriate screen time limits for children. Use built-in device
+      features or third-party apps to manage usage.
+
+  - point: Use Family VPNs
+    priority: Optional
+    details: >-
+      Consider using a family VPN service that offers parental controls
+      and content filtering features.
+
+  - point: Monitor Social Media
+    priority: Essential
+    details: >-
+      If children use social media, monitor their accounts and teach them
+      about privacy settings and appropriate sharing.
+
+  - point: Use Educational Security Tools
+    priority: Optional
+    details: >-
+      Use educational tools to teach children about cybersecurity in an
+      age-appropriate way. Consider games and apps that teach internet safety.
+
+- title: Social Media Security
+  slug: social-media-security
+  description: Protecting your social media accounts and privacy
+  icon: privacy
+  color: purple
+  intro: >-
+    Social media platforms collect vast amounts of personal data. Secure your accounts,
+    review privacy settings, and be careful about what you share online.
+  checklist:
+  - point: Use Strong, Unique Passwords
+    priority: Essential
+    details: >-
+      Use strong, unique passwords for each social media account. Consider using
+      a password manager like [Bitwarden](https://bitwarden.com) or [1Password](https://1password.com)
+      to generate and store secure passwords.
+
+  - point: Enable Two-Factor Authentication
+    priority: Essential
+    details: >-
+      Enable 2FA on all your social media accounts. Use authenticator apps like
+      [Authy](https://authy.com) or [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
+      instead of SMS when possible.
+
+  - point: Review Privacy Settings
+    priority: Essential
+    details: >-
+      Regularly review and adjust privacy settings on all social media platforms.
+      Limit who can see your posts, profile information, and contact you.
+
+  - point: Be Careful with Personal Information
+    priority: Essential
+    details: >-
+      Be cautious about sharing personal information like your address, phone number,
+      or daily routines. Consider what information could be used maliciously.
+
+  - point: Use Privacy-Focused Platforms
+    priority: Optional
+    details: >-
+      Consider using privacy-focused social media alternatives like [Mastodon](https://joinmastodon.org/),
+      [Signal](https://signal.org) for messaging, or [Diaspora](https://diasporafoundation.org/).
+
+  - point: Monitor Account Activity
+    priority: Essential
+    details: >-
+      Regularly check your social media accounts for unauthorized activity.
+      Look for posts you didn't make, messages you didn't send, or login attempts.
+
+  - point: Be Wary of Social Engineering
+    priority: Essential
+    details: >-
+      Be suspicious of friend requests from people you don't know, especially
+      if they claim to know you. Verify identities before accepting requests.
+
+  - point: Use Separate Email for Social Media
+    priority: Advanced
+    details: >-
+      Consider using a separate email address for your social media accounts.
+      This limits the damage if one account is compromised.
+
+  - point: Review Connected Apps
+    priority: Essential
+    details: >-
+      Regularly review which apps and services are connected to your social
+      media accounts. Remove access for apps you no longer use.
+
+  - point: Be Careful with Location Sharing
+    priority: Essential
+    details: >-
+      Be cautious about sharing your location on social media. Consider
+      whether location information could be used to track your movements.
+
+  - point: Use Social Media Security Tools
+    priority: Optional
+    details: >-
+      Consider using tools like [Social Blade](https://socialblade.com) to monitor
+      your social media accounts for unusual activity or [Have I Been Pwned](https://haveibeenpwned.com/)
+      to check if your accounts have been compromised.
+
+- title: Email Security
+  slug: email-security
+  description: Securing your email communications and accounts
+  icon: backup
+  color: blue
+  intro: >-
+    Email is often the gateway to your other accounts. Secure your email with
+    strong passwords, encryption, and careful handling of sensitive information.
+  checklist:
+  - point: Use a Secure Email Provider
+    priority: Essential
+    details: >-
+      Choose an email provider that prioritizes security and privacy. Consider
+      providers like [ProtonMail](https://proton.me/mail), [Tutanota](https://tutanota.com),
+      or [Posteo](https://posteo.de) that offer end-to-end encryption.
+
+  - point: Enable Two-Factor Authentication
+    priority: Essential
+    details: >-
+      Enable 2FA on your email account. This is especially important since
+      email is often used to reset passwords for other accounts.
+
+  - point: Use Strong Passwords
+    priority: Essential
+    details: >-
+      Use a strong, unique password for your email account. Consider using
+      a password manager to generate and store secure passwords.
+
+  - point: Be Careful with Email Attachments
+    priority: Essential
+    details: >-
+      Be cautious about opening email attachments, especially from unknown
+      senders. Scan attachments with antivirus software before opening them.
+
+  - point: Use Email Encryption
+    priority: Advanced
+    details: >-
+      Use email encryption tools like [GPG](https://gnupg.org/) or built-in
+      encryption features to protect sensitive communications.
+
+  - point: Be Wary of Phishing Emails
+    priority: Essential
+    details: >-
+      Be suspicious of emails asking for personal information, passwords,
+      or containing urgent requests. Verify sender addresses carefully.
+
+  - point: Use Separate Email for Important Accounts
+    priority: Advanced
+    details: >-
+      Consider using a separate email address for important accounts like
+      banking, healthcare, and government services.
+
+  - point: Regularly Review Email Rules
+    priority: Optional
+    details: >-
+      Regularly review email rules and filters to ensure they're not
+      being used maliciously to hide important emails.
+
+  - point: Use Email Security Tools
+    priority: Optional
+    details: >-
+      Consider using email security tools like [Mailvelope](https://www.mailvelope.com/)
+      for browser-based encryption or [Thunderbird](https://www.thunderbird.net/)
+      with encryption plugins.
+
+  - point: Monitor Email Account Activity
+    priority: Essential
+    details: >-
+      Regularly check your email account for unusual activity, such as
+      emails you didn't send or login attempts from unknown locations.
+
+  - point: Use Disposable Email Addresses
+    priority: Optional
+    details: >-
+      Use disposable email addresses for services that don't need your
+      real email. Services like [10MinuteMail](https://10minutemail.com/)
+      or [Guerrilla Mail](https://www.guerrillamail.com/) can help.
+
+- title: Mobile Security
+  slug: mobile-security
+  description: Securing your mobile devices and apps
+  icon: lock
+  color: green
+  intro: >-
+    Mobile devices contain vast amounts of personal information. Secure your
+    phones and tablets with strong passwords, encryption, and careful app management.
+  checklist:
+  - point: Use Strong Device Passwords
+    priority: Essential
+    details: >-
+      Use strong passwords, PINs, or biometric authentication on your mobile devices.
+      Avoid simple patterns or easily guessable passwords.
+
+  - point: Enable Device Encryption
+    priority: Essential
+    details: >-
+      Enable full device encryption on your mobile devices. This protects
+      your data even if the device is lost or stolen.
+
+  - point: Keep Devices Updated
+    priority: Essential
+    details: >-
+      Regularly update your mobile device's operating system and apps.
+      Updates often include important security patches.
+
+  - point: Use App Store Security
+    priority: Essential
+    details: >-
+      Only download apps from official app stores (Google Play Store, Apple App Store).
+      Avoid third-party app stores that may contain malicious apps.
+
+  - point: Review App Permissions
+    priority: Essential
+    details: >-
+      Regularly review which permissions your apps have. Only grant
+      permissions that are necessary for the app to function.
+
+  - point: Use Mobile Security Apps
+    priority: Optional
+    details: >-
+      Consider using mobile security apps like [Lookout](https://www.lookout.com/)
+      or [Avast Mobile Security](https://www.avast.com/mobile-security)
+      for additional protection.
+
+  - point: Enable Find My Device
+    priority: Essential
+    details: >-
+      Enable device location and remote wipe features. This helps you
+      locate or erase your device if it's lost or stolen.
+
+  - point: Use Secure Wi-Fi
+    priority: Essential
+    details: >-
+      Be careful when connecting to public Wi-Fi networks. Use a VPN
+      when connecting to unsecured networks.
+
+  - point: Secure Mobile Banking
+    priority: Essential
+    details: >-
+      Use official banking apps and enable all available security features.
+      Never access banking on public Wi-Fi without a VPN.
+
+  - point: Use Mobile VPN
+    priority: Optional
+    details: >-
+      Consider using a mobile VPN service like [ProtonVPN](https://protonvpn.com/)
+      or [NordVPN](https://nordvpn.com/) to encrypt your mobile internet traffic.
+
+  - point: Monitor App Activity
+    priority: Optional
+    details: >-
+      Regularly review which apps are using your data and location.
+      Look for apps that may be collecting more information than necessary.
+
+  - point: Use Secure Messaging Apps
+    priority: Essential
+    details: >-
+      Use secure messaging apps like [Signal](https://signal.org) or
+      [Telegram](https://telegram.org/) for sensitive communications.
+
+- title: Network Security
+  slug: network-security
+  description: Securing your home and office networks
+  icon: software
+  color: orange
+  intro: >-
+    Your network is the foundation of your digital security. Secure your
+    Wi-Fi, use firewalls, and monitor network activity to protect all connected devices.
+  checklist:
+  - point: Change Default Router Passwords
+    priority: Essential
+    details: >-
+      Change the default passwords on your router and other network equipment.
+      Use strong, unique passwords for all network devices.
+
+  - point: Use Strong Wi-Fi Passwords
+    priority: Essential
+    details: >-
+      Use a strong password for your Wi-Fi network. Use WPA3 encryption
+      when available, or at minimum WPA2.
+
+  - point: Update Router Firmware
+    priority: Essential
+    details: >-
+      Regularly update your router's firmware to patch security vulnerabilities.
+      Check for updates monthly or enable automatic updates.
+
+  - point: Use a Firewall
+    priority: Essential
+    details: >-
+      Enable and configure your router's firewall. Consider using additional
+      firewall software on your devices for extra protection.
+
+  - point: Use a VPN
+    priority: Optional
+    details: >-
+      Consider using a VPN service like [ProtonVPN](https://protonvpn.com/),
+      [NordVPN](https://nordvpn.com/), or [ExpressVPN](https://www.expressvpn.com/)
+      to encrypt your internet traffic.
+
+  - point: Monitor Network Activity
+    priority: Advanced
+    details: >-
+      Use network monitoring tools to keep track of devices connected to
+      your network and their activity. Look for unauthorized devices.
+
+  - point: Use Guest Network
+    priority: Optional
+    details: >-
+      Set up a separate guest network for visitors. This keeps your
+      main network more secure.
+
+  - point: Disable WPS
+    priority: Essential
+    details: >-
+      Disable Wi-Fi Protected Setup (WPS) on your router. This feature
+      can be exploited by attackers to gain network access.
+
+  - point: Use Network Security Tools
+    priority: Advanced
+    details: >-
+      Consider using network security tools like [Wireshark](https://www.wireshark.org/)
+      for network analysis or [Nmap](https://nmap.org/) for network scanning.
+
+  - point: Secure IoT Devices
+    priority: Essential
+    details: >-
+      Ensure all IoT devices on your network are properly secured with
+      strong passwords and regular updates.
+
+  - point: Use DNS Filtering
+    priority: Optional
+    details: >-
+      Consider using DNS filtering services like [OpenDNS](https://www.opendns.com/)
+      or [Cloudflare DNS](https://1.1.1.1/) to block malicious websites.
+
+  - point: Monitor Router Logs
+    priority: Advanced
+    details: >-
+      Regularly check your router's logs for unusual activity or
+      unauthorized access attempts.
+
+- title: Data Backup & Recovery
+  slug: data-backup-recovery
+  description: Ensuring your data is safe and recoverable
+  icon: backup
+  color: indigo
+  intro: >-
+    Data loss can be devastating. Implement a comprehensive backup strategy
+    with multiple locations and regular testing to ensure your data is always safe.
+  checklist:
+  - point: Use the 3-2-1 Backup Rule
+    priority: Essential
+    details: >-
+      Follow the 3-2-1 backup rule: 3 copies of your data, on 2 different
+      media types, with 1 copy offsite. This ensures maximum data protection.
+
+  - point: Use Cloud Backup Services
+    priority: Essential
+    details: >-
+      Use secure cloud backup services like [Backblaze](https://www.backblaze.com/),
+      [Carbonite](https://www.carbonite.com/), or [iDrive](https://www.idrive.com/)
+      for automatic offsite backups.
+
+  - point: Use Local Backup Solutions
+    priority: Essential
+    details: >-
+      Use local backup solutions like external hard drives or NAS devices.
+      Consider using [Time Machine](https://support.apple.com/en-us/HT201250) on Mac
+      or [File History](https://support.microsoft.com/en-us/windows/file-history-in-windows-de1f7b8c-6f9c-6f9c-6f9c-6f9c6f9c6f9c) on Windows.
+
+  - point: Encrypt Your Backups
+    priority: Essential
+    details: >-
+      Encrypt your backups to protect sensitive data. Use tools like
+      [VeraCrypt](https://www.veracrypt.fr/) for local encryption.
+
+  - point: Test Your Backups
+    priority: Essential
+    details: >-
+      Regularly test your backups to ensure they can be restored successfully.
+      Don't wait until you need them to discover they don't work.
+
+  - point: Automate Backup Processes
+    priority: Essential
+    details: >-
+      Automate your backup processes to ensure they run regularly without
+      requiring manual intervention.
+
+  - point: Use Version Control
+    priority: Optional
+    details: >-
+      Use version control systems like [Git](https://git-scm.com/) for
+      important documents and code to track changes and maintain history.
+
+  - point: Store Important Documents Securely
+    priority: Essential
+    details: >-
+      Store important documents like passports, birth certificates, and
+      financial records in secure, fireproof locations or encrypted digital storage.
+
+  - point: Use Multiple Backup Locations
+    priority: Advanced
+    details: >-
+      Store backups in multiple physical locations to protect against
+      natural disasters or theft.
+
+  - point: Document Your Backup Strategy
+    priority: Optional
+    details: >-
+      Document your backup strategy and recovery procedures. This ensures
+      others can help you recover data if needed.
+
+  - point: Use Backup Verification
+    priority: Advanced
+    details: >-
+      Use backup verification tools to ensure your backups are complete
+      and uncorrupted. Many backup services offer verification features.
+
+  - point: Plan for Disaster Recovery
+    priority: Essential
+    details: >-
+      Create a disaster recovery plan that includes how to restore your
+      data and get back online quickly after a major incident.
+
+- title: AI Security
+  slug: ai-security
+  description: Protecting yourself from AI-powered threats and securing AI tools
+  icon: software
+  color: purple
+  intro: >-
+    As artificial intelligence becomes more prevalent, new security challenges emerge.
+    Protect yourself from AI-powered attacks, secure your AI tools, and be aware of
+    the privacy implications of AI services.
+  checklist:
+  - point: Be Aware of AI-Powered Phishing
+    priority: Essential
+    details: >-
+      AI-powered phishing attacks are becoming more sophisticated and convincing.
+      Be extra cautious of emails, messages, or calls that seem too good to be true
+      or create a sense of urgency. Verify all requests independently.
+
+  - point: Secure AI Tool Accounts
+    priority: Essential
+    details: >-
+      Use strong, unique passwords for AI tool accounts like ChatGPT, Claude, or
+      other AI services. Enable 2FA where available and be careful about what
+      information you share with AI tools.
+
+  - point: Be Careful with AI-Generated Content
+    priority: Essential
+    details: >-
+      Be skeptical of AI-generated content, especially when it comes to financial
+      advice, medical information, or legal matters. Always verify information
+      from authoritative sources.
+
+  - point: Protect Against Deepfakes
+    priority: Essential
+    details: >-
+      Be aware of deepfake technology that can create convincing fake videos or
+      audio. Verify important communications through multiple channels and be
+      suspicious of unusual requests from known contacts.
+
+  - point: Use AI Privacy Tools
+    priority: Optional
+    details: >-
+      Consider using privacy-focused AI tools or services that don't store your
+      conversations. Some AI services may use your data for training purposes.
+
+  - point: Monitor AI Account Activity
+    priority: Essential
+    details: >-
+      Regularly check your AI tool accounts for unusual activity. Look for
+      conversations you didn't have or settings changes you didn't make.
+
+  - point: Be Careful with Sensitive Data
+    priority: Essential
+    details: >-
+      Never share sensitive personal information, passwords, or private data
+      with AI tools. Assume that anything you share may be stored and used
+      for training purposes.
+
+  - point: Use AI Verification Tools
+    priority: Optional
+    details: >-
+      Consider using tools designed to detect AI-generated content or deepfakes.
+      While not perfect, they can help identify potentially fake content.
+
+  - point: Understand AI Privacy Policies
+    priority: Essential
+    details: >-
+      Read and understand the privacy policies of AI tools you use. Know what
+      data they collect, how they use it, and whether you can opt out of
+      data collection.
+
+  - point: Use AI Responsibly
+    priority: Essential
+    details: >-
+      Use AI tools responsibly and ethically. Don't use AI to generate harmful
+      content, impersonate others, or create misleading information.
+
+- title: Smart Home Security
+  slug: smart-home-security
+  description: Securing your smart home devices and automation systems
+  icon: iot
+  color: cyan
+  intro: >-
+    Smart home devices offer convenience but can also create security vulnerabilities.
+    Secure your smart home network, choose secure devices, and monitor your
+    home automation systems.
+  checklist:
+  - point: Secure Your Smart Home Hub
+    priority: Essential
+    details: >-
+      If you use a smart home hub like [Home Assistant](https://www.home-assistant.io/),
+      [SmartThings](https://www.smartthings.com/), or [Hubitat](https://hubitat.com/),
+      ensure it's properly secured with strong passwords and regular updates.
+
+  - point: Use a Separate IoT Network
+    priority: Advanced
+    details: >-
+      Set up a separate network for your smart home devices. This isolates them
+      from your main network and limits the damage if one device is compromised.
+      Use your router's guest network feature or VLAN capabilities.
+
+  - point: Choose Secure Smart Devices
+    priority: Essential
+    details: >-
+      Research smart devices before purchasing. Look for devices with regular
+      security updates, strong encryption, and good privacy policies. Avoid
+      devices from unknown manufacturers.
+
+  - point: Update Smart Device Firmware
+    priority: Essential
+    details: >-
+      Regularly update the firmware on all your smart home devices. Enable
+      automatic updates when available to ensure you get security patches.
+
+  - point: Secure Smart Cameras
+    priority: Essential
+    details: >-
+      If you use smart cameras, ensure they're properly secured. Change default
+      passwords, enable encryption, and be careful about where you place them
+      to avoid privacy violations.
+
+  - point: Monitor Smart Home Activity
+    priority: Advanced
+    details: >-
+      Use network monitoring tools to keep track of your smart home devices'
+      network activity. Look for unusual traffic patterns that might indicate
+      compromise.
+
+  - point: Secure Smart Locks
+    priority: Essential
+    details: >-
+      If you use smart locks, ensure they have strong encryption and secure
+      communication protocols. Regularly update firmware and monitor for
+      unauthorized access attempts.
+
+  - point: Use Local Smart Home Solutions
+    priority: Advanced
+    details: >-
+      Consider using local smart home solutions that don't rely on cloud services.
+      This gives you more control over your data and reduces privacy risks.
+
+  - point: Secure Smart Speakers
+    priority: Essential
+    details: >-
+      Secure your smart speakers by changing default settings, reviewing
+      privacy options, and being careful about what you say around them.
+      Consider muting them when not in use.
+
+  - point: Monitor Smart Home Privacy
+    priority: Essential
+    details: >-
+      Regularly review the privacy settings on your smart home devices and apps.
+      Disable features you don't use and limit data collection where possible.
+
+  - point: Use Smart Home Security Tools
+    priority: Advanced
+    details: >-
+      Consider using smart home security tools like [Bitdefender Box](https://www.bitdefender.com/smart-home/)
+      or [F-Secure SENSE](https://www.f-secure.com/en/home/products/sense) to protect
+      your smart home network.
+
+  - point: Plan for Smart Home Emergencies
+    priority: Essential
+    details: >-
+      Have a plan for what to do if your smart home systems fail or are compromised.
+      Know how to manually control critical systems like locks and alarms.
+
+- title: Digital Identity Protection
+  slug: digital-identity-protection
+  description: Protecting your digital identity and preventing identity theft
+  icon: privacy
+  color: indigo
+  intro: >-
+    Your digital identity is valuable and can be used for fraud and identity theft.
+    Protect your personal information, monitor your digital footprint, and take
+    steps to prevent identity theft.
+  checklist:
+  - point: Freeze Your Credit
+    priority: Essential
+    details: >-
+      Freeze your credit with all three major credit bureaus (Equifax, Experian, TransUnion).
+      This prevents unauthorized credit applications in your name. You can temporarily
+      unfreeze when you need to apply for credit.
+
+  - point: Monitor Your Credit Reports
+    priority: Essential
+    details: >-
+      Regularly check your credit reports for unauthorized accounts or activity.
+      You're entitled to one free report from each bureau annually at [AnnualCreditReport.com](https://www.annualcreditreport.com/).
+
+  - point: Use Identity Theft Protection
+    priority: Optional
+    details: >-
+      Consider using identity theft protection services like [LifeLock](https://www.lifelock.com/),
+      [IdentityForce](https://www.identityforce.com/), or [IDShield](https://www.idshield.com/)
+      for additional monitoring and protection.
+
+  - point: Secure Your Social Security Number
+    priority: Essential
+    details: >-
+      Be extremely careful with your Social Security number. Only share it when
+      absolutely necessary, and never share it via email or unsecured websites.
+
+  - point: Use Strong Passwords for Government Accounts
+    priority: Essential
+    details: >-
+      Use strong, unique passwords for government accounts like IRS, Social Security,
+      and state tax accounts. Enable 2FA where available.
+
+  - point: Monitor Your Digital Footprint
+    priority: Essential
+    details: >-
+      Regularly search for your name online to see what information is publicly
+      available. Use tools like [Google Alerts](https://www.google.com/alerts) to
+      monitor mentions of your name.
+
+  - point: Use Identity Verification Services
+    priority: Advanced
+    details: >-
+      Consider using identity verification services like [ID.me](https://www.id.me/)
+      or [Login.gov](https://login.gov/) for secure access to government services.
+
+  - point: Secure Your Tax Information
+    priority: Essential
+    details: >-
+      File your taxes early to prevent tax identity theft. Use strong passwords
+      for tax software and enable 2FA where available.
+
+  - point: Monitor Bank and Credit Card Activity
+    priority: Essential
+    details: >-
+      Regularly check your bank and credit card statements for unauthorized
+      transactions. Set up alerts for unusual activity.
+
+  - point: Use Secure Document Storage
+    priority: Essential
+    details: >-
+      Store important documents like birth certificates, passports, and tax
+      returns in secure, encrypted storage. Consider using a safe or safety
+      deposit box for physical documents.
+
+  - point: Be Careful with Personal Information
+    priority: Essential
+    details: >-
+      Be cautious about sharing personal information online, especially on social
+      media. Information like your birth date, address, and mother's maiden name
+      can be used for identity theft.
+
+  - point: Use Identity Theft Insurance
+    priority: Optional
+    details: >-
+      Consider purchasing identity theft insurance to cover the costs of
+      recovering from identity theft, including legal fees and lost wages.
+
+  - point: Create an Identity Theft Recovery Plan
+    priority: Essential
+    details: >-
+      Have a plan for what to do if you become a victim of identity theft.
+      Know who to contact and what steps to take to minimize damage.
+
+- title: Emergency Preparedness
+  slug: emergency-preparedness
+  description: Preparing for digital emergencies and disasters
+  icon: backup
+  color: red
+  intro: >-
+    Digital emergencies can happen at any time. Prepare for data loss, device
+    failure, and other digital disasters with proper planning and backup strategies.
+  checklist:
+  - point: Create a Digital Emergency Kit
+    priority: Essential
+    details: >-
+      Prepare a digital emergency kit with essential information like passwords,
+      account recovery codes, important documents, and contact information.
+      Store this securely both digitally and physically.
+
+  - point: Plan for Device Failure
+    priority: Essential
+    details: >-
+      Have a plan for what to do if your primary device fails. Know how to
+      access your accounts from other devices and have backup devices ready.
+
+  - point: Prepare for Internet Outages
+    priority: Essential
+    details: >-
+      Have offline access to important information and tools. Download offline
+      maps, store important documents locally, and have backup communication methods.
+
+  - point: Create a Recovery Contact List
+    priority: Essential
+    details: >-
+      Maintain a list of important contacts including family, friends, financial
+      institutions, and technical support. Store this both digitally and physically.
+
+  - point: Plan for Data Recovery
+    priority: Essential
+    details: >-
+      Know how to recover your data from backups. Test your recovery procedures
+      regularly to ensure they work when you need them.
+
+  - point: Prepare for Account Lockouts
+    priority: Essential
+    details: >-
+      Have backup methods for accessing important accounts. Keep recovery codes,
+      backup email addresses, and alternative phone numbers updated.
+
+  - point: Plan for Natural Disasters
+    priority: Essential
+    details: >-
+      Include digital preparedness in your natural disaster planning. Protect
+      devices from water damage, have portable chargers, and store important
+      data in multiple locations.
+
+  - point: Create a Digital Will
+    priority: Advanced
+    details: >-
+      Consider creating a digital will that specifies what should happen to
+      your digital assets and accounts if something happens to you.
+
+  - point: Prepare for Cyber Attacks
+    priority: Essential
+    details: >-
+      Have a plan for responding to cyber attacks. Know how to isolate
+      compromised devices, change passwords, and contact relevant authorities.
+
+  - point: Test Your Emergency Plans
+    priority: Essential
+    details: >-
+      Regularly test your emergency preparedness plans. Practice recovering
+      from backups, accessing accounts from different devices, and using
+      alternative communication methods.
+
+  - point: Keep Emergency Supplies Updated
+    priority: Essential
+    details: >-
+      Maintain emergency supplies including portable chargers, backup devices,
+      and offline copies of important information.
+
+  - point: Plan for Travel Emergencies
+    priority: Essential
+    details: >-
+      Have a plan for digital emergencies while traveling. Know how to access
+      your accounts from abroad, have international contact information, and
+      prepare for different power standards.
+
+  - point: Create a Digital Inventory
+    priority: Essential
+    details: >-
+      Maintain an inventory of your digital assets including accounts, devices,
+      and important files. This helps with recovery and insurance claims.
+
+  - point: Plan for Family Emergencies
+    priority: Essential
+    details: >-
+      Ensure family members know how to access important accounts and information
+      in case of emergency. Share emergency contact information and recovery procedures.
+
+  - point: Prepare for Legal Emergencies
+    priority: Advanced
+    details: >-
+      Have access to important legal documents digitally and physically. Know
+      how to contact legal representatives and have emergency legal resources available.
+
+  - point: Create a Communication Plan
+    priority: Essential
+    details: >-
+      Have multiple ways to communicate during emergencies. Include both digital
+      and non-digital communication methods in your emergency plan.

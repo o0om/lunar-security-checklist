@@ -1,0 +1,10 @@
+{
+  "name": "lunar-security-checklist",
+  "version": "1.0.0",
+  "description": "🌙 Lunar Security Checklist - A comprehensive personal security checklist",
+  "private": true,
+  "scripts": {
+    "build": "cd web && npm run build.static",
+    "install": "cd web && npm install --legacy-peer-deps"
+  }
+} 

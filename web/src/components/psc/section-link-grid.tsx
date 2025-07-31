@@ -28,23 +28,25 @@ export default component$((props: { sections: Section[] }) => {
 
   // On load (in browser only), calculate and set completion data for sections
   useOnWindow('load', $(async () => {
-    // Percentage completion, per section
-    completions.value = await Promise.all(props.sections.map(section => 
-      getPercentCompletion(section),
-    ));
-    // Count of completed items, per section
-    done.value = await Promise.all(props.sections.map(section => 
-      section.checklist.filter(
-        (item) => checked.value[item.point.toLowerCase().replace(/ /g, '-')],
-      ).length
-    ));
+    if (props.sections && Array.isArray(props.sections) && props.sections.length > 0) {
+      // Percentage completion, per section
+      completions.value = await Promise.all(props.sections.map(section => 
+        getPercentCompletion(section),
+      ));
+      // Count of completed items, per section
+      done.value = await Promise.all(props.sections.map(section => 
+        section.checklist.filter(
+          (item) => checked.value[item.point.toLowerCase().replace(/ /g, '-')],
+        ).length
+      ));
+    }
   }));
 
   return (
     <div class={[styles.container, 'grid',
       'mx-auto mt-8 px-4 gap-7', 'xl:px-10 xl:max-w-7xl',
       'transition-all', 'max-w-6xl w-full']}>
-      {props.sections.map((section: Section, index: number) => (                   
+      {props.sections && Array.isArray(props.sections) && props.sections.map((section: Section, index: number) => (                   
         <a key={section.slug}
           href={`/checklist/${section.slug}`}
           class={[

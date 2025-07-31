@@ -24,6 +24,7 @@
     "build.preview": "vite build --ssr src/entry.preview.tsx",
     "build.server": "vite build -c adapters/vercel-edge/vite.config.mts",
     "build.static": "vite build -c adapters/static/vite.config.mts",
+    "build.vercel": "qwik build",
     "build.types": "tsc --incremental --noEmit",
     "deploy": "vercel deploy",
     "dev": "vite --mode ssr",
@@ -36,7 +37,7 @@
     "qwik": "qwik"
   },
   "devDependencies": {
-    "@builder.io/qwik-city": "^1.1.4",
+    "@builder.io/qwik-city": "^1.2.0",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^20.11.16",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
@@ -51,12 +52,12 @@
     "typescript": "^5.3.3",
     "undici": "^5.16.0",
     "vercel": "^29.1.1",
-    "vite": "^4.0.4",
+    "vite": "^5.0.0",
     "vite-plugin-static-copy": "^1.0.1",
     "vite-tsconfig-paths": "^4.3.1"
   },
   "dependencies": {
-    "@builder.io/qwik": "^1.1.4",
+    "@builder.io/qwik": "^1.2.0",
     "@tailwindcss/typography": "^0.5.10",
     "chart.js": "^4.4.1",
     "marked": "^12.0.0",

@@ -9,10 +9,11 @@ export default extendConfig(baseConfig, () => {
       rollupOptions: {
         input: ["@qwik-city-plan"],
       },
+      outDir: "dist",
     },
     plugins: [
       staticAdapter({
-        origin: "https://yoursite.qwik.dev",
+        origin: "https://luna-checklist-c7u0sssed-ssadds-projects-34e04faf.vercel.app"
       }),
     ],
   };

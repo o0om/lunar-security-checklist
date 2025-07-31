@@ -1,20 +1,20 @@
-import { component$, useContext } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import { useLocation } from '@builder.io/qwik-city';
 import { marked } from 'marked';
 
 import Icon from '~/components/core/icon';
-import { ChecklistContext } from '~/store/checklist-context';
+import { useChecklist } from '~/store/local-checklist-store';
 import type { Section } from "~/types/PSC";
 import Table from '~/components/psc/checklist-table';
 
 export default component$(() => {
 
-  const checklists = useContext(ChecklistContext);
+  const { checklist } = useChecklist();
 
   const loc = useLocation();
   const slug = loc.params.title;
 
-  const section: Section | undefined = (checklists.value)
+  const section: Section | undefined = (checklist.checklist || [])
     .find((item: Section) => item.slug === slug);
 
   const parseMarkdown = (text: string | undefined): string => {

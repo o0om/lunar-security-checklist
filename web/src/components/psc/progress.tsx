@@ -22,6 +22,8 @@ export default component$(() => {
   const [ignoredItems] = useLocalStorage('PSC_IGNORED', {});
   // Local storage for closing and ignoring the welcome dialog
   const [ignoreDialog, setIgnoreDialog] = useLocalStorage('PSC_CLOSE_WELCOME', false);
+  // Fallback state for dialog visibility (in case local storage fails)
+  const dialogClosed = useSignal(false);
   // Store to hold calculated progress results
   const totalProgress = useSignal({ completed: 0, outOf: 0 });
   // Ref to the radar chart canvas
@@ -145,15 +147,16 @@ export default component$(() => {
    * Initiate the filtering, calculation and rendering of progress charts
    */
   useOnWindow('load', $(() => {
+    if (checklists.value && Array.isArray(checklists.value) && checklists.value.length > 0) {
+      calculateProgress(checklists.value)
+        .then((progress) => {
+          totalProgress.value = progress;
+      })
 
-    calculateProgress(checklists.value)
-      .then((progress) => {
-        totalProgress.value = progress;
-    })
-
-    makeDataAndDrawChart('essential', 'hsl(var(--su, 158 64% 52%))');
-    makeDataAndDrawChart('optional', 'hsl(var(--wa, 43 96% 56%))');
-    makeDataAndDrawChart('advanced', 'hsl(var(--er, 0 91% 71%))');
+      makeDataAndDrawChart('essential', 'hsl(var(--su, 158 64% 52%))');
+      makeDataAndDrawChart('optional', 'hsl(var(--wa, 43 96% 56%))');
+      makeDataAndDrawChart('advanced', 'hsl(var(--er, 0 91% 71%))');
+    }
   }));
 
 
@@ -161,11 +164,13 @@ export default component$(() => {
    * Calculates the percentage of completion for each section
    */
   useOnWindow('load', $(async () => {
-    sectionCompletion.value = await Promise.all(checklists.value.map(section => {
-      return calculateProgress([section]).then(
-        (progress) => Math.round(progress.completed / progress.outOf * 100)
-      );
-    }));
+    if (checklists.value && Array.isArray(checklists.value) && checklists.value.length > 0) {
+      sectionCompletion.value = await Promise.all(checklists.value.map(section => {
+        return calculateProgress([section]).then(
+          (progress) => Math.round(progress.completed / progress.outOf * 100)
+        );
+      }));
+    }
   }));
 
 
@@ -224,53 +229,55 @@ export default component$(() => {
   useOnWindow('load', $(() => {
     Chart.register(...registerables);
 
-    makeRadarData(checklists.value).then((data) => {
-      if (radarChart.value) {
-        new Chart(radarChart.value, {
-          type: 'radar',
-          data,
-          options: {
-            responsive: true,
-            scales: {
-              r: {
-                angleLines: {
-                  display: true,
-                  color: '#7d7d7da1',
-                },
-                suggestedMin: 0,
-                suggestedMax: 100,
-                ticks: {
-                  stepSize: 25,
-                  callback: (value) => `${value}%`,
-                  color: '#ffffffbf',
-                  backdropColor: '#ffffff3b',
-                },
-                grid: {
-                  display: true,
-                  color: '#7d7d7dd4',
-                },
-              },
-            },
-            plugins: {
-              legend: {
-                position: 'bottom',
-                labels: {
-                  font: {
-                    size: 10,
+    if (checklists.value && Array.isArray(checklists.value) && checklists.value.length > 0) {
+      makeRadarData(checklists.value).then((data) => {
+        if (radarChart.value) {
+          new Chart(radarChart.value, {
+            type: 'radar',
+            data,
+            options: {
+              responsive: true,
+              scales: {
+                r: {
+                  angleLines: {
+                    display: true,
+                    color: '#7d7d7da1',
+                  },
+                  suggestedMin: 0,
+                  suggestedMax: 100,
+                  ticks: {
+                    stepSize: 25,
+                    callback: (value) => `${value}%`,
+                    color: '#ffffffbf',
+                    backdropColor: '#ffffff3b',
+                  },
+                  grid: {
+                    display: true,
+                    color: '#7d7d7dd4',
                   },
                 },
               },
-              tooltip: {
-                callbacks: {
-                  label: (ctx) => `Completed ${Math.round(ctx.parsed.r)}% of ${ctx.dataset.label || ''} items`,
+              plugins: {
+                legend: {
+                  position: 'bottom',
+                  labels: {
+                    font: {
+                      size: 10,
+                    },
+                  },
+                },
+                tooltip: {
+                  callbacks: {
+                    label: (ctx) => `Completed ${Math.round(ctx.parsed.r)}% of ${ctx.dataset.label || ''} items`,
+                  }
                 }
-              }
-            },
-          }
-        });
-        
-      }
-    });
+              },
+            }
+          });
+          
+        }
+      });
+    }
   }));
 
   const items = [
@@ -282,14 +289,18 @@ export default component$(() => {
   // Beware, some god-awful markup ahead (thank Tailwind for that!)
   return (
   <div class="flex justify-center flex-wrap items-stretch gap-6 mb-4 relative">
-    {(!ignoreDialog.value && (!Object.keys(checkedItems.value).length) ) && (
+    {(!ignoreDialog.value && !dialogClosed.value && (!Object.keys(checkedItems.value).length) ) && (
     <div class="
       px-16 py-8 top-1/3 z-10 max-w-lg
       absolute flex flex-col justify-center bg-gray-600 rounded-md bg-clip-padding
       backdrop-filter backdrop-blur-md bg-opacity-40 border border-stone-800">
         <button
-          class="absolute top-1 right-1 btn btn-sm opacity-50"
-          onClick$={() => setIgnoreDialog(true)}
+          class="absolute top-1 right-1 btn btn-sm opacity-50 hover:opacity-100"
+          onClick$={$(() => {
+            setIgnoreDialog(true);
+            dialogClosed.value = true;
+            console.log('Dialog closed');
+          })}
           >Close</button>
         <p class="text-xl block text-center font-bold">No stats yet</p>
         <p class="w-md text-left my-2">You'll see your progress here, once you start ticking items off the checklists</p>
@@ -345,7 +356,7 @@ export default component$(() => {
       {/* Remaining Tasks */}
       <div class="p-4 rounded-box bg-front shadow-md w-96 flex-grow">
         <ul>
-          { checklists.value.map((section: Section, index: number) => (
+          { checklists.value && Array.isArray(checklists.value) && checklists.value.map((section: Section, index: number) => (
               <li key={index}>
                 <a
                   href={`/checklist/${section.slug}`}

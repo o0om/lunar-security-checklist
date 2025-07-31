@@ -1,8 +1,7 @@
 {
-  "name": "lunar-security-checklist",
   "version": 2,
-  "buildCommand": "npm run build.static",
-  "outputDirectory": "dist",
+  "buildCommand": "npm run build.vercel",
+  "outputDirectory": "output",
   "installCommand": "npm install --legacy-peer-deps",
   "headers": [
     {
